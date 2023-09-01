@@ -1,0 +1,75 @@
+.bodytext,
+.publicsans,
+.publicsans.publicsansfont,
+.publicsansfont,
+.publicsanspurple,
+.publicsanswhite,
+.publicsanswhite.publicsanswhitenormal,
+.publicsanswhitethin,
+.theuniverse {
+  font-family: "Public Sans",sans-serif
+}
+.left-90,
+.pos {
+  position: relative
+}
+.bodytext {
+  color: #fff
+}
+.publicsans {
+  color: #f1c40f
+}
+.publicsanspurple {
+  color: #7856ff;
+  font-weight: 700
+}
+.publicsanswhite {
+  font-weight: 600;
+  color: #f9f9f9
+}
+.publicsanswhitethin,
+.theuniverse {
+  color: #fff
+}
+.publicsanswhite.publicsanswhitenormal,
+.publicsanswhitethin {
+  font-weight: 100
+}
+.buttonbg,
+.theuniverse {
+  font-weight: 700
+}
+.buttonbg {
+  background-color: #f1c40f;
+  color: #000
+}
+.bg {
+  background-color: #16161c
+}
+.atacamapurple,
+.bg-atacamapurple {
+  background-color: #2d2e5f
+}
+.normalspacing {
+  line-height: 60px
+}
+.bgwhite.publicsansblack.publicsanswhite {
+  font-family: "Public Sans",sans-serif;
+  color: #000
+}
+.bgwhiteish {
+  background-color: #f6f6f6
+}
+.bgdarkpurple {
+  background-color: #2d2e5f
+}
+.bgcomet {
+  background-image: url("../images/Copy-of-Copy-of-cometa-2-min-jpg-1693341802945.webp");
+  background-size: cover;
+  background-repeat-x: no-repeat;
+  background-repeat-y: no-repeat
+}
+.left-90 {
+  left: 90px
+}
+
