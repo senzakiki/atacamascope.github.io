@@ -12,11 +12,65 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
     <script src="js/main.js"></script>
+    <style>
+        .dropdown:hover .dropdown-menu {  display: block;}
+
+.dropdown-container {  display: none;  background-color: #262626;  padding-left: 8px;}
+
+.navbar ul ul li a:hover {background-color: #2D2E5F;}
+
+.navbar ul ul li {display: block;}.navbar li:hover ul {display: block;}
+
+.navbar ul ul {position: absolute;top: 100%;display: none;}
+
+.navbar li a {display: block;padding: 10px 20px;text-decoration: none;}
+
+.navbar li {display: inline-block;}
+
+.navbar ul {list-style-type: none;margin: 0;padding: 0;}
+
+.navbar {position: relative;z-index: 999;}
+
+.dropdown-content a:hover {background-color: #2D2E5F;  }
+
+.dropdown-content a {      display: block;      color: #2D2E5F;      padding: 5px;      text-decoration: none;  }
+
+.dropdown:hover .dropdown-content {      display: block;  }
+
+.dropdown-content {      display: none;      position: absolute;      width: 100%;      overflow: auto;      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  }
+    </style>
+    <script type="text/javascript">
+        .dropdown:hover .dropdown-menu {  display: block;}
+
+.dropdown-container {  display: none;  background-color: #262626;  padding-left: 8px;}
+
+.navbar ul ul li a:hover {background-color: #2D2E5F;}
+
+.navbar ul ul li {display: block;}.navbar li:hover ul {display: block;}
+
+.navbar ul ul {position: absolute;top: 100%;display: none;}
+
+.navbar li a {display: block;padding: 10px 20px;text-decoration: none;}
+
+.navbar li {display: inline-block;}
+
+.navbar ul {list-style-type: none;margin: 0;padding: 0;}
+
+.navbar {position: relative;z-index: 999;}
+
+.dropdown-content a:hover {background-color: #2D2E5F;  }
+
+.dropdown-content a {      display: block;      color: #2D2E5F;      padding: 5px;      text-decoration: none;  }
+
+.dropdown:hover .dropdown-content {      display: block;  }
+
+.dropdown-content {      display: none;      position: absolute;      width: 100%;      overflow: auto;      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  }
+    </script>
 </head>
 <body class="antialiased bg-body text-body font-body">
     <div class="">
                 
-      <div class="top-0 flex items-center justify-between px-4 py-5 w-full relative bg-transparent bg">
+      <div class="top-0 flex items-center justify-between px-4 py-5 w-full relative bg">
         <div class="w-auto">
           <div class="flex flex-wrap items-center">
             <div class="w-auto mr-14">
@@ -27,9 +81,11 @@
               <nav class="navbar"><div class="w-auto hidden lg:block h-auto">
                 <ul class="flex items-center mr-16 font-bold hover:text-indigo-600"><li class="mr-9 font-medium hover:text-indigo-600"><a href="index.html" class="publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">HOME</a></li>
                   <li><a href="about-us.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">ABOUT US</a>
-                    <ul><li class="z-auto h-auto"><a href="#" class="publicsans">Option 1</a></li>
-                      <li><a href="#" class="publicsans">Option 2</a></li>
-                      <li><a href="#" class="publicsans">Option 3</a></li>
+                    <ul><li class="z-auto h-auto"><a href="#" class="hover:text-indigo-600 publicsans">For Young Astronomers
+                      </a></li>
+                      <li><a href="#" class="hover:text-indigo-600 publicsans">For Parents/Teachers
+                        </a></li>
+                      <li><a href="#" class="hover:text-indigo-600 publicsans">For Educational Institutions</a></li>
                     </ul></li>
                   <li><a href="#" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">OBSERVATORY</a></li>
                   <li><a href="#" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">PRODUCT</a></li>
@@ -57,8 +113,54 @@
             </div>
           </div>
         </div>
+        <div class="navbar-menu fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 hidden">
+          <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
+          <nav class="relative z-10 px-9 pt-8 bg h-full overflow-y-auto"><div class="flex flex-wrap justify-between h-full">
+            <div class="w-full">
+              <div class="flex items-center justify-between -m-2">
+                <div class="w-auto p-2">
       
-      </div>
+                  <a class="inline-block" href="#">
+                    <img src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt=""></a>
+                </div>
+                <div class="w-auto p-2">
+                  <a class="navbar-burger" href="#">
+                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 6M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex flex-col justify-center py-16 w-full">
+              <ul><li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">HOME</a>
+                </li>
+                <div class="dropdown relative">
+                  <button>
+                    <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">ABOUT US</a></li>
+                  </button>
+                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"><li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                    <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+                    <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+                  </ul></div>
+                <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">OBSERVATORY</a></li>
+                <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">PRODUCTS</a></li>
+                <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">BLOG</a></li>
+                <li><a class="font-medium hover:text-indigo-600 publicsans" href="#">CONTACT</a></li>
+              </ul></div>
+            <div class="flex flex-col justify-end w-full pb-8">
+              <div class="flex flex-wrap">
+                <div class="w-full mb-3">
+                  <div class="block">
+                  </div>
+                </div>
+                <div class="w-full">
+                  <div class="block">
+                    <button class="w-full font-semibold rounded-xl focus:ring transition ease-in-out duration-200 publicsanspurple font-bold px-10 py-3" type="button">
+                      <img src="images/Account-Thumbnail-png-1693514926644.webp" alt="" class="rounded shadow-md inline" width="20"> ACCOUNT </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            </div>
+          </nav></div></div>
                 
       <section class="relative py-20 md:py-32 overflow-hidden bg"><img class="absolute bottom-0 right-0 -mb-20" src="saturn-assets/images/contact/light-orange-right.png" alt=""><div class="relative container px-4 mx-auto">
         <div class="max-w-2xl mx-auto mb-22 text-center">
@@ -67,7 +169,7 @@
             <span class="publicsanspurple">Get in touch with us</span>
             
           </h1>
-          <p class="text-xl font-semibold publicsansfont text-white">We help people to grow their business using saturn ui library with professional and powerfull solution.</p>
+          <p class="text-xl font-semibold publicsansfont text-white">Lorem Ipsum</p>
         </div>
         <div class="max-w-5xl mx-auto">
           <div class="flex flex-wrap justify-center -mx-4">
