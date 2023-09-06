@@ -39,6 +39,9 @@
 .theuniverse {
   font-weight: 700
 }
+.left-90 {
+  left: 90px
+}
 .buttonbg {
   background-color: #f1c40f;
   color: #000
@@ -69,7 +72,7 @@
   background-repeat-x: no-repeat;
   background-repeat-y: no-repeat
 }
-.left-90 {
-  left: 90px
+.bgdarkyellow {
+  background-color: #f1c40f
 }
 
