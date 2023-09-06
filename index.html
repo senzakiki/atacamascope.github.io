@@ -12,47 +12,98 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
     <script src="js/main.js"></script>
+    <style>
+        .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+    </style>
+    <style>
+        .dropdown-container {  display: none;  background-color: #262626;  padding-left: 8px;}
+    </style>
+    <style>
+        .navbar ul ul li a:hover {background-color: #2D2E5F;}
+    </style>
+    <style>
+        .navbar ul ul li {display: block;}.navbar li:hover ul {display: block;}
+    </style>
+    <style>
+        .navbar ul ul {position: absolute;top: 100%;display: none;}
+    </style>
+    <style>
+        .navbar li a {display: block;padding: 10px 20px;text-decoration: none;}
+    </style>
+    <style>
+        .navbar li {display: inline-block;}
+    </style>
+    <style>
+        .navbar ul {list-style-type: none;margin: 0;padding: 0;}
+    </style>
+    <style>
+        .navbar {position: relative;z-index: 999;}
+    </style>
+    <style>
+        .dropdown-content a:hover {background-color: #2D2E5F;  }
+    </style>
+    <style>
+        .dropdown-content a {      display: block;      color: #2D2E5F;      padding: 5px;      text-decoration: none;  }
+    </style>
+    <style>
+        .dropdown:hover .dropdown-content {      display: block;  }
+    </style>
+    <style>
+        .dropdown-content {      display: none;      position: absolute;      width: 100%;      overflow: auto;      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  }
+    </style>
+    <script type="text/javascript">
+        $('.sub-menu ul').hide();$(".sub-menu a").click(function () {	$(this).parent(".sub-menu").children("ul").slideToggle("100");	$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");});
+    </script>
 </head>
 <body class="antialiased bg-body text-body font-body">
     <div class="">
                 
-      <section class="bgcomet bg-no-repeat bg-cover bg-fixed relative overflow-hidden h-screen bg-center" style="background-image"><div class="container mx-auto overflow-hidden">
-        <div class="relative top-0 flex items-center justify-between px-4 py-5 bg-transparent w-full">
-          <div class="w-auto">
-            <div class="flex flex-wrap items-center">
-              <div class="w-auto mr-14">
-                <a href="index.html">
-                  <img src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt="" class="transform hover:scale-110 transition ease-in-out duration-500"></a>
-              </div>
-              <div class="w-auto hidden lg:block">
+      <section class="bgcomet bg-no-repeat bg-cover bg-fixed relative overflow-hidden h-screen bg-center" style="background-image"><div class="top-0 flex items-center justify-between px-4 py-5 w-full relative bg-transparent">
+        <div class="w-auto">
+          <div class="flex flex-wrap items-center">
+            <div class="w-auto mr-14">
+              <a href="index.html">
+                <img src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt="" class="transform hover:scale-110 transition ease-in-out duration-500"></a>
+            </div>
+            <div class="w-auto hidden lg:block">
+              <nav class="navbar"><div class="w-auto hidden lg:block h-auto">
                 <ul class="flex items-center mr-16 font-bold hover:text-indigo-600"><li class="mr-9 font-medium hover:text-indigo-600"><a href="index.html" class="publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">HOME</a></li>
-                  <li class="mr-9 font-medium hover:text-indigo-600"><a href="about-us.html" class="publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">ABOUT US</a></li>
-                  <li class="mr-9 font-medium hover:text-indigo-600"><a href="#" class="publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">OBSERVATORY</a></li>
-                  <li class="mr-9 font-medium hover:text-indigo-600"><a href="#" class="publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">PRODUCT</a></li>
-                  <li class="mr-9 font-medium hover:text-indigo-600"><a href="blog.html" class="publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">BLOG</a></li>
-                  <li class="font-medium hover:text-indigo-600"><a href="contact-us.html" class="publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">CONTACT</a></li>
-                </ul></div>
-            </div>
+                  <li><a href="about-us.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">ABOUT US</a>
+                    <ul><li class="z-auto h-auto"><a href="#" class="hover:text-indigo-600 publicsans">For Young Astronomers
+                      </a></li>
+                      <li><a href="#" class="hover:text-indigo-600 publicsans">For Parents/Teachers
+                        </a></li>
+                      <li><a href="#" class="hover:text-indigo-600 publicsans">For Educational Institutions</a></li>
+                    </ul></li>
+                  <li><a href="#" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">OBSERVATORY</a></li>
+                  <li><a href="#" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">PRODUCT</a></li>
+                  <li><a href="blog.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">BLOG</a></li>
+                  <li><a href="contact-us.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">CONTACT</a></li>
+                </ul></div></nav></div>
           </div>
-          <div class="w-auto">
-            <div class="flex flex-wrap items-center">
-              <div class="w-auto hidden mr-5 lg:block">
-                <div class="inline-block">
+        </div>
+        <div class="w-auto">
+          <div class="flex flex-wrap items-center">
+            <div class="w-auto hidden mr-5 lg:block">
+              <div class="inline-block">
       
-                </div>
-              </div>
-              <div class="w-auto hidden lg:block">
-                <div class="inline-block">
-                  <button class="w-full font-semibold rounded-xl focus:ring transition ease-in-out duration-200 publicsanspurple font-bold px-10 py-3" type="button">
-                    <img src="images/Account-Thumbnail-png-1693514926644.webp" alt="" class="rounded shadow-md inline" width="20"> ACCOUNT </button>
-                </div>
-              </div>
-              <div class="w-auto lg:hidden">
-                <a href="#">
-                  <svg class="navbar-burger text-indigo-600" width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="56" height="56" rx="28" fill="currentColor"></rect><path d="M37 32H19M37 24H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
               </div>
             </div>
+            <div class="w-auto hidden lg:block">
+              <div class="inline-block">
+                <button class="w-full font-semibold rounded-xl focus:ring transition ease-in-out duration-200 publicsanspurple font-bold px-10 py-3" type="button">
+                  <img src="images/Account-Thumbnail-png-1693514926644.webp" alt="" class="rounded shadow-md inline" width="20"> ACCOUNT </button>
+              </div>
+            </div>
+            <div class="w-auto lg:hidden">
+              <a href="#">
+                <svg class="navbar-burger text-indigo-600" width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="56" height="56" rx="28" fill="currentColor"></rect><path d="M37 32H19M37 24H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+            </div>
           </div>
+        </div>
         </div>
         <div class="navbar-menu fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 hidden">
           <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
@@ -71,8 +122,16 @@
               </div>
             </div>
             <div class="flex flex-col justify-center py-16 w-full">
-              <ul><li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">HOME</a></li>
-                <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">ABOUT US</a></li>
+              <ul><li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">HOME</a>
+                </li>
+                <div class="dropdown relative">
+                  <button>
+                    <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">ABOUT US</a></li>
+                  </button>
+                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"><li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">One</a></li>
+                    <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Two</a></li>
+                    <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="#">Three is the magic number</a></li>
+                  </ul></div>
                 <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">OBSERVATORY</a></li>
                 <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">PRODUCTS</a></li>
                 <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">BLOG</a></li>
@@ -94,7 +153,7 @@
             </div>
             </div>
           </nav></div>
-        </div>
+      
         <div class="md:w-1/2 p-8 w-full items-center"> </div>
         <div class="overflow-hidden pt-16 pb-48">
           <div class="relative container px-4 mx-auto">
@@ -111,7 +170,6 @@
       
                 </div>
               </div>
-      
             </div>
           </div>
         </div>
@@ -143,32 +201,32 @@
                 
       <section class="py-24 bg-white bg"><div class="container px-4 mx-auto">
         <div class="max-w-xl text-center mx-auto mb-20">
-          <h2 class="font-heading mb-5 tracking-tighter text-12xl publicsanswhite">Grow with us</h2>
+          <h2 class="font-heading mb-5 tracking-tighter publicsanswhite text-10xl">Why AtacamaScope?</h2>
       
         </div>
         <div class="flex flex-wrap -m-7 mb-14">
           <div class="w-full md:w-1/4 p-7">
             <div class="max-w-xs">
-              <img class="mx-auto" src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt=""><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">Publishing</h3>
-              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Lorem ipsum dolor sit amet, consectetur elit</p>
+              <img class="mx-auto" src="images/Asset-2-png-1694022925579.webp" alt=""><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">The Universe, For Everybody</h3>
+              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Anyone can have access to our astronomical observatory</p>
             </div>
           </div>
           <div class="w-full md:w-1/4 p-7">
             <div class="max-w-xs">
-              <img class="mx-auto" src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt=""><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">Career</h3>
-              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Lorem ipsum dolor sit amet, consectetur elit</p>
+              <img class="mx-auto" src="images/Asset-5-png-1694022955143.webp" alt=""><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">Astronomy made simple</h3>
+              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Our platform can be used by beginners</p>
             </div>
           </div>
           <div class="w-full md:w-1/4 p-7">
             <div class="max-w-xs">
-              <img class="mx-auto" src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt=""><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">Education</h3>
-              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Lorem ipsum dolor sit amet, consectetur elit</p>
+              <img class="mx-auto" src="images/Asset-8-png-1694023049585.webp" alt=""><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">Keeping learning interesting</h3>
+              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Practical teaching improves student's learning curve</p>
             </div>
           </div>
           <div class="w-full md:w-1/4 p-7">
             <div class="max-w-xs">
-              <img class="mx-auto" src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt=""><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">Meeting</h3>
-              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Lorem ipsum dolor sit amet, consectetur elit</p>
+              <img class="mx-auto" src="images/Asset-11-png-1694023078796.webp" alt=""><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">Affordable</h3>
+              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Astronomy without breaking the bank</p>
             </div>
           </div>
         </div>
@@ -217,39 +275,30 @@
       
         <div class="flex flex-wrap items-center justify-center -m-4">
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large4.png" alt=""></div>
+            <img src="images/1-uvalparaiso-png-1694023284838.webp" alt=""></div>
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large5.png" alt=""></div>
+            <img src="images/2-sternfreunde-png-1694023371242.webp" alt=""></div>
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large6.png" alt=""></div>
+            <img src="images/3-escuelaterritorioantartico-png-1694023395075.webp" alt=""></div>
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large4.png" alt=""></div>
+            <img src="images/4-fweduca-png-1694023413590.webp" alt=""></div>
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large5.png" alt=""></div>
+            <img src="images/5-Prochile-png-1694023437583.webp" alt=""></div>
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large6.png" alt=""></div>
+            <img src="images/6-LogosGOREyERI-png-1694023606656.webp" alt=""></div>
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large4.png" alt=""></div>
+            <img src="images/7-ComiteCorfoApoyado-png-1694023626781.webp" alt=""></div>
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large5.png" alt=""></div>
+            <img src="images/8-logo-core-png-1694023647718.webp" alt=""></div>
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large6.png" alt=""></div>
+            <img src="images/9-LatAm-White22-png-1694023673678.webp" alt=""></div>
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large6.png" alt=""></div>
+            <img src="images/10-accelerationplus-png-1694023697368.webp" alt=""></div>
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large4.png" alt=""></div>
+            <img src="images/11-Aster-png-1694023714446.webp" alt=""></div>
           <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large5.png" alt=""></div>
-          <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large6.png" alt=""></div>
-          <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large6.png" alt=""></div>
-          <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large4.png" alt=""></div>
-          <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large5.png" alt=""></div>
-          <div class="w-auto p-4">
-            <img src="flaro-assets/logos/brands/brand-large6.png" alt=""></div>
+            <img src="images/12-Haltech-png-1694023730258.webp" alt=""></div>
+          
         </div>
       
         <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></div>
