@@ -13,7 +13,7 @@ html(lang="en")
         script(src="js/main.js")
     body(class="antialiased bg-body text-body font-body")
         div(class="")
-            section(class="pt-24 pb-28 bg-blueGray-50 overflow-hidden bg")
+            section(class="pt-24 pb-28 bg-blueGray-50 overflow-hidden bg h-screen bg-cover")
                 div(class="container px-4 mx-auto")
                     h2(class="mb-6 text-6xl md:text-8xl xl:text-10xl text-white text-center font-bold font-heading tracking-px-n leading-none md:max-w-xl mx-auto") Choose Your Plan
                     p(class="mb-20 text-lg text-gray-400 text-center font-medium leading-normal md:max-w-lg mx-auto") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elemen tum.
@@ -23,20 +23,44 @@ html(lang="en")
                                 div(class="relative flex flex-col px-9 pt-8 pb-9 h-full bg-white bg-opacity-90 border-blueGray-100 rounded-4xl shadow-9xl bgdarkpurple", style="backdrop-filter: blur(46px);")
                                     div(class="relative z-10")
                                         span(class="mb-9 inline-block text-sm font-semibold tracking-px leading-snug publicsanswhite text-4xl") Monthly
-                                        h3(class="text-4xl font-bold leading-none publicsanswhite mb-10", contenteditable="false") $35.00
-                                        p(class="text-gray-600 font-medium leading-relaxed publicsanswhite mb-10") Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Egestas lacus, blan dit pellentesque.
-                                        button(class="py-4 px-10 w-full text-white font-semibold rounded-xl focus:ring focus:ring-indigo-300 hover:bg-indigo-700 transition ease-in-out duration-200 buttonbg", type="button") Get Started Now
+                                        li(class="flex mb-5 items-center")
+                                            img(src="saturn-assets/images/pricing/green-check.svg", alt="")
+                                            span(class="ml-3 publicsanswhite") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                        li(class="flex mb-5 items-center")
+                                            img(src="saturn-assets/images/pricing/green-check.svg", alt="")
+                                            span(class="ml-3 publicsanswhite") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                        li(class="flex mb-5 items-center")
+                                            img(src="saturn-assets/images/pricing/green-check.svg", alt="")
+                                            span(class="ml-3 publicsanswhite") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                        h3(class="font-bold leading-none publicsanswhite mb-10 text-2xl", contenteditable="false") $35.00
+                                        button(class="py-4 px-10 text-white font-semibold rounded-xl focus:ring focus:ring-indigo-300 hover:bg-indigo-700 transition ease-in-out duration-200 buttonbg w-full", type="button") Get Started Now
                             div(class="w-full md:w-1/3 p-4")
                                 div(class="relative flex flex-col px-9 pt-8 pb-9 h-full bg-white bg-opacity-90 border-blueGray-100 rounded-4xl shadow-9xl bgdarkpurple", style="backdrop-filter: blur(46px);")
                                     div(class="relative z-10")
                                         span(class="mb-9 inline-block text-sm font-semibold tracking-px leading-snug publicsanswhite text-4xl") Quarterly
-                                        h3(class="text-4xl font-bold leading-none publicsanswhite mb-10", contenteditable="false") $55.00
-                                        p(class="font-medium leading-relaxed publicsanswhite mb-10") Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Egestas lacus, blan dit pellentesque.
-                                        button(class="py-4 px-10 w-full text-white font-semibold rounded-xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200 buttonbg", type="button") Get Started Now
+                                        li(class="flex mb-5 items-center")
+                                            img(src="saturn-assets/images/pricing/green-check.svg", alt="")
+                                            span(class="ml-3 publicsanswhite") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                        li(class="flex mb-5 items-center")
+                                            img(src="saturn-assets/images/pricing/green-check.svg", alt="")
+                                            span(class="ml-3 publicsanswhite") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                        li(class="flex mb-5 items-center")
+                                            img(src="saturn-assets/images/pricing/green-check.svg", alt="")
+                                            span(class="ml-3 publicsanswhite") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                        h3(class="font-bold leading-none publicsanswhite mb-10 text-2xl", contenteditable="false") $55.00
+                                        button(class="py-4 px-10 w-full text-white font-semibold rounded-xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200 buttonbg top-full", type="button") Get Started Now
                             div(class="w-full md:w-1/3 p-4")
                                 div(class="relative flex flex-col px-9 pt-8 pb-9 h-full bg-white bg-opacity-90 border-blueGray-100 rounded-4xl shadow-9xl bgdarkpurple", style="backdrop-filter: blur(46px);")
                                     div(class="relative z-10")
                                         span(class="mb-9 inline-block text-sm font-semibold tracking-px leading-snug publicsanswhite text-4xl", contenteditable="false") Annually
-                                        h3(class="text-4xl text-gray-900 font-bold leading-none publicsanswhite mb-10") $150.00
-                                        p(class="font-medium leading-relaxed publicsanswhite mb-10") Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Egestas lacus, blan dit pellentesque.
-                                        button(class="py-4 px-10 w-full text-white font-semibold rounded-xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200 buttonbg", type="button") Get Started Now
+                                        li(class="flex mb-5 items-center")
+                                            img(src="saturn-assets/images/pricing/green-check.svg", alt="")
+                                            span(class="ml-3 publicsanswhite") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                        li(class="flex mb-5 items-center")
+                                            img(src="saturn-assets/images/pricing/green-check.svg", alt="")
+                                            span(class="ml-3 publicsanswhite") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                        li(class="flex mb-5 items-center")
+                                            img(src="saturn-assets/images/pricing/green-check.svg", alt="")
+                                            span(class="ml-3 publicsanswhite") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                        h3(class="text-gray-900 font-bold leading-none publicsanswhite mb-10 text-2xl") $150.00
+                                        button(class="py-4 px-10 w-full text-white font-semibold rounded-xl focus:ring focus:ring-indigo-300 bg-indigo-600 hover:bg-indigo-700 transition ease-in-out duration-200 buttonbg top-full", type="button") Get Started Now
