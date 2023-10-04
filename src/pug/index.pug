@@ -4,7 +4,7 @@ html(lang="en")
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
         link(rel="preconnect", href="https://fonts.gstatic.com")
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Public+Sans:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin,latin-ext")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Public+Sans:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i|Manrope:200,300,400,500,600,700,800&subset=latin,latin-ext,cyrillic,greek")
         link(href="https://fonts.cdnfonts.com/css/general-sans?styles=135312,135310,135313,135303", rel="stylesheet")
         link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap", rel="stylesheet")
         link(rel="stylesheet", href="css/tailwind/tailwind.min.css")
@@ -57,7 +57,7 @@ html(lang="en")
                 
     body(class="antialiased bg-body text-body font-body")
         div(class="")
-            section(class="bgcomet bg-no-repeat bg-cover bg-fixed relative overflow-hidden h-screen bg-center", style="background-image")
+            section(class="bgcomet bg-no-repeat bg-cover bg-fixed relative overflow-hidden h-full bg-center", style="background-image")
                 div(class="top-0 flex items-center justify-between px-4 py-5 w-full relative bg-transparent")
                     div(class="w-auto")
                         div(class="flex flex-wrap items-center")
@@ -73,7 +73,7 @@ html(lang="en")
                                             li
                                                 a(href="about-us.html", class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500") ABOUT US
                                             li
-                                                a(href="#", class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500") OBSERVATORY
+                                                a(href="observatory.html", class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500") OBSERVATORY
                                             li
                                                 a(href="products.html", class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500") PRODUCT
                                                 ul
@@ -154,26 +154,26 @@ html(lang="en")
                     div(class="relative container px-4 mx-auto")
                         div(class="-m-8 flex flex-wrap")
                             div(class="md:w-1/2 p-8 w-full items-center")
-                                h1(class="mb-9 font-bold font-heading leading-none publicsanswhite text-12xl drop-shadow-2xl") The Universe,
+                                h1(class="mb-9 font-bold font-heading leading-none publicsanswhite text-12xl drop-shadow-2xl manrope") The Universe,
                                 |                   Just a Click Away
                                 div
                                     p(class="mb-9 text-xl text-gray-900 font-medium publicsanswhite transition ease-in-out duration-500") We provide easy-to-use & affordable tool for parents & educators who are interested in teaching astronomy as part of children's STEAM education.
                                     div(class="mb-12 md:inline-block")
                                         button(class="py-4 px-6 w-full text-white font-semibold border border-indigo-700 rounded-xl focus:ring focus:ring-indigo-300 hover:bg-indigo-700 transition ease-in-out duration-200 buttonbg publicsansfont", type="button") EXPLORE NOW
-            section(class="bg py-36 mg:bg-contain")
-                div(class="container px-4 mx-auto")
-                    div(class="flex flex-wrap xl:items-center -m-8")
-                        div(class="w-full md:w-1/2 p-8")
-                            h2(class="mb-5 font-bold font-heading tracking-px-n leading-tight font:text-5xl text-5xl publicsans") HI, I'M ATACAMASCOPE
-                            p(class="mb-8 text-lg font-medium md:max-w-lg text-10xl normalspacing publicsanswhite") Operate a telescope in the best sky in the world.
-                            div(class="mb-20 md:inline-block")
-                                button(class="py-4 px-6 w-full text-white font-semibold rounded-xl border focus:ring focus:ring-indigo-300 bg-indigo-600 transition ease-in-out duration-200 buttonbg hover:bg-indigo-600 publicsansfont", type="button") CAPTURE A NEBULA
-                            div(class="flex flex-wrap -m-8")
-                                div(class="w-full md:w-1/2 p-8")       
-                                |               
-                        div(class="w-full md:w-1/2 p-8")
-                            div(class="relative", style="padding-bottom: 56.25%")
-                                iframe(src="https://www.youtube.com/embed/wN-mZtbX2Pg?si=Z7PFIwJZEVAUDAKn", frameborder="0", class="absolute w-full h-full", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen="")
+                section(class="py-36 mg:bg-contain bg-transparent")
+                    div(class="container px-4 mx-auto")
+                        div(class="flex flex-wrap xl:items-center -m-8")
+                            div(class="w-full md:w-1/2 p-8")
+                                h2(class="mb-5 font-bold font-heading tracking-px-n leading-tight font:text-5xl text-5xl publicsans") HI, I'M ATACAMASCOPE
+                                p(class="mb-8 text-lg font-medium md:max-w-lg text-10xl normalspacing publicsanswhite") Operate a telescope in the best sky in the world.
+                                div(class="mb-20 md:inline-block")
+                                    button(class="py-4 px-6 w-full text-white font-semibold rounded-xl border focus:ring focus:ring-indigo-300 bg-indigo-600 transition ease-in-out duration-200 buttonbg hover:bg-indigo-600 publicsansfont", type="button") CAPTURE A NEBULA
+                                div(class="flex flex-wrap -m-8")
+                                    div(class="w-full md:w-1/2 p-8")       
+                                    |                 
+                            div(class="w-full md:w-1/2 p-8")
+                                div(class="relative", style="padding-bottom: 56.25%")
+                                    iframe(src="https://www.youtube.com/embed/wN-mZtbX2Pg?si=Z7PFIwJZEVAUDAKn", frameborder="0", class="absolute w-full h-full", allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture", allowfullscreen="")
             section(class="py-24 bg-white bg")
                 div(class="container px-4 mx-auto")
                     div(class="max-w-xl text-center mx-auto mb-20")
@@ -202,10 +202,9 @@ html(lang="en")
                     div(class="flex flex-row justify-center")
             section(class="py-28 bg-black bg-no-repeat bg-center bg-cover bg-fixed overflow-hidden", style="background: url("images/rancho-mirage4.jpg") 50% 50% / cover no-repeat fixed padding-box border-box rgb(0, 0, 0);")
                 div(class="container px-4 mx-auto")
-                    div(class="px-12 pt-12 pb-9 md:max-w-xl bg-black rounded-4xl opacity-50 publicsansfont", style="backdrop-filter: blur(10px);")
-                        h3(class="mb-4 text-white font-heading tracking-px-n leading-tight text-2xl md:text-2xl publicsanswhite", contenteditable="false") What is Astronomy?
-                        h2(class="mb-4 text-6xl md:text-7xl text-white font-heading tracking-px-n leading-tight publicsanswhite", contenteditable="false") A New Dawn of Discovery
-                        p(class="mb-11 text-lg text-gray-400 font-medium leading-normal publicsanswhite") Lorem ipsum dolor sit amet, to the consectr adipiscing elit. Volutpat tempor to the condim entum vitae vel purus.
+                    div(class="px-12 pt-12 pb-9 md:max-w-xl bg-black rounded-4xl opacity-50", style="backdrop-filter: blur(10px);")
+                        h3(class="mb-4 text-6xl md:text-7xl text-white font-bold font-heading tracking-px-n leading-tight", contenteditable="false") What is Astronomy?
+                        p(class="mb-11 text-lg text-gray-400 font-medium leading-normal") Lorem ipsum dolor sit amet, to the consectr adipiscing elit. Volutpat tempor to the condim entum vitae vel purus.
                         a(class="inline-flex flex-wrap items-center text-white hover:text-gray-200", href="#")       
                         |       
                         |             
@@ -263,8 +262,8 @@ html(lang="en")
                                         div(class="mb-9 w-full overflow-hidden rounded-2xl")
                                             img(class="w-full transform hover:scale-105 transition ease-in-out duration-1000", src="images/Copy-of-Copy-of-Final-LRGB-combination-3.jpg", alt="")
                                         a(class="inline-block text-white hover:text-gray-200 hover:underline", href="#")
-                                            h3(class="text-xl font-bold font-heading leading-normal") Space is Full of Surprises
-                                    p(class="text-sm text-gray-400 font-medium") August 30, 2023
+                                            h3(class="text-xl font-bold font-heading leading-normal publicsanswhite") Space is Full of Surprises
+                                    p(class="text-sm text-gray-400 font-medium manrope") August 30, 2023
                         div(class="w-full md:w-1/3 p-8")
                             div(class="p-4 h-full bg-opacity-70 rounded-xl bgdarkpurple")
                                 div(class="flex flex-col justify-between h-full")
@@ -272,8 +271,8 @@ html(lang="en")
                                         div(class="mb-9 w-full overflow-hidden rounded-2xl")
                                             img(class="w-full transform hover:scale-105 transition ease-in-out duration-1000", src="images/rancho-mirage4.jpg", alt="")
                                         a(class="inline-block text-white hover:text-gray-200 hover:underline", href="#")
-                                            h3(class="text-xl font-bold font-heading leading-normal") Space is What Matters The Most
-                                    p(class="text-sm text-gray-400 font-medium") August 30, 2023
+                                            h3(class="text-xl font-bold font-heading leading-normal publicsanswhite") Space is What Matters The Most
+                                    p(class="text-sm text-gray-400 font-medium manrope") August 30, 2023
                         div(class="w-full md:w-1/3 p-8")
                             div(class="p-4 h-full bg-opacity-70 rounded-xl bgdarkpurple")
                                 div(class="flex flex-col justify-between h-full")
@@ -281,8 +280,8 @@ html(lang="en")
                                         div(class="mb-9 w-full overflow-hidden rounded-2xl")
                                             img(class="w-full transform hover:scale-105 transition ease-in-out duration-1000", src="images/shutterstock-1141143581.jpg", alt="")
                                         a(class="inline-block text-white hover:text-gray-200 hover:underline", href="#")
-                                            h3(class="text-xl font-bold font-heading leading-normal") Let's Measure The Space
-                                    p(class="text-sm text-gray-400 font-medium") August 30, 2023
+                                            h3(class="text-xl font-bold font-heading leading-normal publicsanswhite") Let's Measure The Space
+                                    p(class="text-sm text-gray-400 font-medium manrope") August 30, 2023
             section(class="bg-white bg-no-repeat bg-center bg-cover bg-fixed overflow-hidden", style="background-image: url('images/Copy-of-stargazin-4.jpg');")
                 div(class="py-40 bg-black bg-opacity-20", style="backdrop-filter: blur(12px);")
                     div(class="container px-4 mx-auto")

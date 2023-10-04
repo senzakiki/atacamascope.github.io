@@ -1,12 +1,5 @@
 .bodytext,
-.publicsans,
-.publicsans.publicsansfont,
-.publicsansfont,
-.publicsanspurple,
-.publicsanswhite,
-.publicsanswhite.publicsanswhitenormal,
-.publicsanswhitethin,
-.theuniverse {
+.publicsans.publicsansfont {
   font-family: "Public Sans",sans-serif
 }
 .left-90,
@@ -15,6 +8,12 @@
 }
 .bodytext {
   color: #fff
+}
+.publicsans,
+.publicsansfont,
+.publicsanspurple,
+.publicsanswhite {
+  font-family: Manrope,sans-serif
 }
 .publicsans {
   color: #f1c40f
@@ -29,9 +28,13 @@
 }
 .publicsanswhitethin,
 .theuniverse {
-  color: #fff
+  color: #fff;
+  font-family: "Public Sans",sans-serif
 }
-.publicsanswhite.publicsanswhitenormal,
+.publicsanswhite.publicsanswhitenormal {
+  font-family: "Public Sans",sans-serif;
+  font-weight: 100
+}
 .publicsanswhitethin {
   font-weight: 100
 }
@@ -74,5 +77,8 @@
 }
 .bgdarkyellow {
   background-color: #f1c40f
+}
+.manrope {
+  font-family: Manrope,sans-serif
 }
 
