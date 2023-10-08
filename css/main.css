@@ -13,7 +13,10 @@
 .publicsansfont,
 .publicsanspurple,
 .publicsanswhite {
-  font-family: Manrope,sans-serif
+  font-family: Montserrat,sans-serif
+}
+.left-90 {
+  left: 90px
 }
 .publicsans {
   color: #f1c40f
@@ -31,10 +34,6 @@
   color: #fff;
   font-family: "Public Sans",sans-serif
 }
-.publicsanswhite.publicsanswhitenormal {
-  font-family: "Public Sans",sans-serif;
-  font-weight: 100
-}
 .publicsanswhitethin {
   font-weight: 100
 }
@@ -42,8 +41,9 @@
 .theuniverse {
   font-weight: 700
 }
-.left-90 {
-  left: 90px
+.publicsanswhite.publicsanswhitenormal {
+  font-family: "Public Sans",sans-serif;
+  font-weight: 100
 }
 .buttonbg {
   background-color: #f1c40f;
