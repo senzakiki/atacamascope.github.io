@@ -41,13 +41,13 @@
 .theuniverse {
   font-weight: 700
 }
-.publicsanswhite.publicsanswhitenormal {
-  font-family: "Public Sans",sans-serif;
-  font-weight: 100
-}
 .buttonbg {
   background-color: #f1c40f;
   color: #000
+}
+.publicsanswhite.publicsanswhitenormal {
+  font-family: "Public Sans",sans-serif;
+  font-weight: 100
 }
 .bg {
   background-color: #16161c
@@ -80,5 +80,13 @@
 }
 .manrope {
   font-family: Manrope,sans-serif
+}
+.exo {
+  font-family: Exo 2,sans-serif;
+  color: #f1c40f
+}
+.exowhite,
+.publicwhite {
+  color: #fff
 }
 
