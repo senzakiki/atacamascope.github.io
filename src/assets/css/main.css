@@ -81,8 +81,11 @@
 .manrope {
   font-family: Manrope,sans-serif
 }
+.exo,
+.exowhite {
+  font-family: Exo,sans-serif
+}
 .exo {
-  font-family: Exo 2,sans-serif;
   color: #f1c40f
 }
 .exowhite,
@@ -90,6 +93,6 @@
   color: #fff
 }
 .publicpurple {
-  color: #7856ff
+  color: #00fa9a
 }
 
