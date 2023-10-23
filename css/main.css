@@ -13,7 +13,7 @@
 .publicsansfont,
 .publicsanspurple,
 .publicsanswhite {
-  font-family: Montserrat,sans-serif
+  font-family: Manrope,sans-serif
 }
 .left-90 {
   left: 90px
@@ -41,9 +41,24 @@
 .theuniverse {
   font-weight: 700
 }
+.exo,
+.exowhite,
+.manrope {
+  font-family: Manrope,sans-serif
+}
 .buttonbg {
   background-color: #f1c40f;
   color: #000
+}
+.exo {
+  color: #f1c40f
+}
+.exowhite,
+.publicwhite {
+  color: #fff
+}
+.exowhite {
+  font-weight: 400
 }
 .publicsanswhite.publicsanswhitenormal {
   font-family: "Public Sans",sans-serif;
@@ -70,7 +85,7 @@
   background-color: #2d2e5f
 }
 .bgcomet {
-  background-image: url("../images/Copy-of-Copy-of-cometa-2-min-jpg-1693341802945.webp");
+  background-image: url("../images/IMG-1626.JPG");
   background-size: cover;
   background-repeat-x: no-repeat;
   background-repeat-y: no-repeat
@@ -78,24 +93,21 @@
 .bgdarkyellow {
   background-color: #f1c40f
 }
-.manrope {
-  font-family: Manrope,sans-serif
+.publicpurple {
+  color: #7856ff
 }
-.exo,
-.exowhite {
-  font-family: Exo,sans-serif
-}
-.exo {
+.publicsanspurple.yellowcolor,
+.yellowcolor {
   color: #f1c40f
 }
-.exowhite,
-.publicwhite {
+.wafont {
+  font-size: 18px
+}
+.midtext {
+  text-align: center
+}
+.manrope.whitecolor,
+.publicsanspurple.whitecolor {
   color: #fff
-}
-.exowhite {
-  font-weight: 400
-}
-.publicpurple {
-  color: #00fa9a
 }
 

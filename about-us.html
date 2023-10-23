@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i|Manrope:200,300,400,500,600,700,800|Montserrat:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i|Exo:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin,latin-ext,cyrillic,greek,cyrillic-ext,vietnamese">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i|Manrope:200,300,400,500,600,700,800&amp;subset=latin,latin-ext,cyrillic,greek">
     <link href="https://fonts.cdnfonts.com/css/general-sans?styles=135312,135310,135313,135303" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
@@ -57,14 +57,17 @@
               <nav class="navbar"><div class="w-auto hidden lg:block h-auto">
                 <ul class="flex items-center mr-16 font-bold hover:text-indigo-600"><li class="mr-9 font-medium hover:text-indigo-600"><a href="index.html" class="publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">HOME</a></li>
                   <li><a href="about-us.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">ABOUT US</a>
-                  </li>
-                  <li><a href="observatory.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">OBSERVATORY</a></li>
-                  <li><a href="products.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">PRODUCT</a>
-                    <ul><li class="z-auto h-auto"><a href="young-astronomers.html" class="hover:text-indigo-600 publicsans">For Young Astronomers
+                    <ul><li class="z-auto h-auto"><a href="meet-our-team.html" class="hover:text-indigo-600 publicsans">Meet Our Team
                       </a></li>
+      
+                    </ul></li>
+                  <li><a href="#" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">OBSERVATORY</a></li>
+                  <li><a href="products.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">PRODUCT</a>
+                    <ul><li><a href="educational-institutions.html" class="hover:text-indigo-600 publicsans">For Educational Institutions</a></li>
                       <li><a href="parents-teachers.html" class="hover:text-indigo-600 publicsans">For Parents/Teachers
                         </a></li>
-                      <li><a href="educational-institutions.html" class="hover:text-indigo-600 publicsans">For Educational Institutions</a></li>
+                      <li class="z-auto h-auto"><a href="young-astronomers.html" class="hover:text-indigo-600 publicsans">For Young Astronomers
+                        </a></li>
                     </ul></li>
                   <li><a href="blog.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">BLOG</a></li>
                   <li><a href="contact-us.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">CONTACT</a></li>
@@ -109,13 +112,17 @@
             <div class="flex flex-col justify-center py-16 w-full">
               <ul><li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">HOME</a>
                 </li>
-                <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">ABOUT US</a></li>
+                <div class="dropdown relative"> 
+                  <button><li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="products.html">ABOUT US</a></li></button>
+                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"><li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="meet-our-team.html">MEET OUR TEAM</a></li>
+      
+                  </ul></div>
                 <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">OBSERVATORY</a></li>
                 <div class="dropdown relative"> 
                   <button><li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="products.html">PRODUCTS</a></li></button>
-                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"><li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="young-astronomers.html">For Young Astronomers</a></li>
+                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"><li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="educational-institutions.html">For Educational Institutions</a></li>
                     <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="parents-teachers.html">For Parents/Teachers</a></li>
-                    <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="educational-institutions.html">For Educational Institutions</a></li>
+                    <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="young-astronomers.html">For Young Astronomers</a></li>
                   </ul></div>
                 <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">BLOG</a></li>
                 <li><a class="font-medium hover:text-indigo-600 publicsans" href="#">CONTACT</a></li>
@@ -137,119 +144,71 @@
             </div>
           </nav></div></div>
                 
-      <section class="py-20 overflow-hidden bg"><div class="container px-4 mx-auto">
-        <div class="flex flex-wrap items-center -m-8">
-          <div class="w-full md:w-1/2 p-8">
-            <div class="md:max-w-md">
-              <span class="inline-block mb-4 text-sm font-medium tracking-tighter publicsanspurple" contenteditable="false">ABOUT US</span>
-              <h2 class="mb-8 text-6xl md:text-7xl text-white tracking-tighter-xl publicsansfont">Generate Lorem Ipsum placeholder text</h2>
-              <p class="mb-8 text-lg text-gray-300 publicsansfont">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut diam quam nulla porttitor massa id neque aliquam vestibulum. Sed tempus urna et pharetra pharetra massa massa ultricies. Massa placerat duis ultricies lacus sed turpis tincidunt id. Quam quisque id diam vel quam elementum pulvinar etiam. Tristique magna sit amet purus gravida. Tincidunt ornare massa eget egestas purus viverra accumsan in. Turpis in eu mi bibendum neque egestas congue quisque egestas. Risus at ultrices mi tempus imperdiet. Sed ullamcorper morbi tincidunt ornare massa eget.</p>
-      
-            </div>
+      <section class="md:pb-28 overflow-hidden bg pb-24 pt-14"><div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -m-8">
+          <div class="container mx-auto px-4">
+            <span class="inline-block mb-4 text-sm tracking-tighter text-6xl manrope yellowcolor font-bold" contenteditable="false">ABOUT US</span>
           </div>
           <div class="w-full md:w-1/2 p-8">
-            <img src="images/25566.jpg" alt="" class="shadow-md rounded-2xl">
-      </div>
-        </div>
-        </div>
-        </section>
-                
-      <section class="pt-24 pb-36 overflow-hidden bg"><div class="container px-4 mx-auto">
-        <h2 class="mb-5 text-6xl md:text-8xl xl:text-10xl text-center font-bold font-heading tracking-px-n leading-none text-white publicsansfont" contenteditable="false">Meet Our Team</h2>
-        <p class="mb-20 text-lg text-center font-medium md:max-w-xl mx-auto publicsansfont text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.</p>
+            <h1 class="text-6xl md:text-7xl text-white tracking-tighter-xl publicsansfont">Our Enhanced Mission</h1>
+          </div>
+          <div class="w-full md:w-1/2 p-8">
+            <h3 class="mb-8 text-2xl text-white tracking-tighter publicsansfont">Our mission is to bring science closer, making it accessible to all people in the world in a simple, modern, and entertaining way. Through practical experiences, we connect children with the stars and the universe, promoting their empowerment, capacity, and inspiration to create a future in science and technology. We are dedicated to awakening curiosity and interest in astronomy and science, inspiring the new generations to discover the fascinating world of scientific knowledge and STEAM (science, technology, engineering, art, and mathematics).</h3>
       
-        <div class="flex flex-wrap max-w-7xl mx-auto -m-3">
       
-          <div class="w-full md:w-1/2 lg:w-1/4 p-3">
-            <div class="relative max-w-max mx-auto h-full overflow-hidden rounded-3xl ">
-              <img class="h-full object-cover " src="images/how-to-become-an-astronomer-in-australia-ozstudies-jpg-1693414040016.webp" alt=""><div class="absolute bottom-0 left-0 w-full p-2">
-              <div class="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg transform hover:scale-105 transition ease-in-out duration-1000">
-                <h3 class="mb-1 text-lg text-white font-bold leading-snug publicsansfont">Lorem Ipsum</h3>
-                <p class="text-gray-400 font-medium publicsansfont">CEO</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/4 p-3">
-            <div class="relative max-w-max mx-auto h-full overflow-hidden rounded-3xl ">
-              <img class="h-full object-cover " src="images/how-to-become-an-astronomer-in-australia-ozstudies-jpg-1693414040016.webp" alt=""><div class="absolute bottom-0 left-0 w-full p-2">
-              <div class="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg transform hover:scale-105 transition ease-in-out duration-1000">
-                <h3 class="mb-1 text-lg text-white font-bold leading-snug publicsansfont">Lorem Ipsum</h3>
-                <p class="text-gray-400 font-medium publicsansfont">CEO</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/4 p-3">
-            <div class="relative max-w-max mx-auto h-full overflow-hidden rounded-3xl ">
-              <img class="h-full object-cover " src="images/how-to-become-an-astronomer-in-australia-ozstudies-jpg-1693414040016.webp" alt=""><div class="absolute bottom-0 left-0 w-full p-2">
-              <div class="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg transform hover:scale-105 transition ease-in-out duration-1000">
-                <h3 class="mb-1 text-lg text-white font-bold leading-snug publicsansfont">Lorem Ipsum</h3>
-                <p class="text-gray-400 font-medium publicsansfont">CEO</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/4 p-3">
-            <div class="relative max-w-max mx-auto h-full overflow-hidden rounded-3xl ">
-              <img class="h-full object-cover " src="images/how-to-become-an-astronomer-in-australia-ozstudies-jpg-1693414040016.webp" alt=""><div class="absolute bottom-0 left-0 w-full p-2">
-              <div class="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg transform hover:scale-105 transition ease-in-out duration-1000">
-                <h3 class="mb-1 text-lg text-white font-bold leading-snug publicsansfont">Lorem Ipsum</h3>
-                <p class="text-gray-400 font-medium publicsansfont">CEO</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/4 p-3">
-            <div class="relative max-w-max mx-auto h-full overflow-hidden rounded-3xl ">
-              <img class="h-full object-cover " src="images/how-to-become-an-astronomer-in-australia-ozstudies-jpg-1693414040016.webp" alt=""><div class="absolute bottom-0 left-0 w-full p-2">
-              <div class="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg transform hover:scale-105 transition ease-in-out duration-1000">
-                <h3 class="mb-1 text-lg text-white font-bold leading-snug publicsansfont">Lorem Ipsum</h3>
-                <p class="text-gray-400 font-medium publicsansfont">CEO</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/4 p-3">
-            <div class="relative max-w-max mx-auto h-full overflow-hidden rounded-3xl ">
-              <img class="h-full object-cover " src="images/how-to-become-an-astronomer-in-australia-ozstudies-jpg-1693414040016.webp" alt=""><div class="absolute bottom-0 left-0 w-full p-2">
-              <div class="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg transform hover:scale-105 transition ease-in-out duration-1000">
-                <h3 class="mb-1 text-lg text-white font-bold leading-snug publicsansfont">Lorem Ipsum</h3>
-                <p class="text-gray-400 font-medium publicsansfont">CEO</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/4 p-3">
-            <div class="relative max-w-max mx-auto h-full overflow-hidden rounded-3xl ">
-              <img class="h-full object-cover " src="images/how-to-become-an-astronomer-in-australia-ozstudies-jpg-1693414040016.webp" alt=""><div class="absolute bottom-0 left-0 w-full p-2">
-              <div class="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg transform hover:scale-105 transition ease-in-out duration-1000">
-                <h3 class="mb-1 text-lg text-white font-bold leading-snug publicsansfont">Lorem Ipsum</h3>
-                <p class="text-gray-400 font-medium publicsansfont">CEO</p>
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="w-full md:w-1/2 lg:w-1/4 p-3">
-            <div class="relative max-w-max mx-auto h-full overflow-hidden rounded-3xl ">
-              <img class="h-full object-cover " src="images/how-to-become-an-astronomer-in-australia-ozstudies-jpg-1693414040016.webp" alt=""><div class="absolute bottom-0 left-0 w-full p-2">
-              <div class="bg-black bg-opacity-80 w-full py-4 px-5 rounded-lg transform hover:scale-105 transition ease-in-out duration-1000">
-                <h3 class="mb-1 text-lg text-white font-bold leading-snug publicsansfont">Lorem Ipsum</h3>
-                <p class="text-gray-400 font-medium publicsansfont">CEO</p>
-              </div>
-              </div>
-            </div>
           </div>
         </div>
         </div>
       </section>
                 
-      <section class="bg-white bg-no-repeat bg-center bg-cover bg-fixed overflow-hidden" style="background-image: url('images/Copy-of-stargazin-4.jpg');"><div class="py-40 bg-black bg-opacity-20" style="backdrop-filter: blur(12px);">
+      <section class="pt-20 pb-24 md:pb-28 overflow-hidden bg"><div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -m-8">
+          <div class="w-full md:w-1/2 p-8">
+              <h1 class="text-6xl md:text-7xl text-white tracking-tighter-xl publicsansfont">Our Unwavering Commitment</h1>
+          </div>
+          <div class="md:w-1/2 w-full p-8">
+            <h3 class="mb-8 text-2xl text-white tracking-tighter publicsansfont">At the core of our mission is the unwavering commitment to awaken the spirit of curiosity and cultivate a deep fascination with astronomy and science. We are dedicated to inspiring the next generation, equipping them with the knowledge and enthusiasm needed to unlock the captivating world of scientific wisdom and the diverse domains of STEAM (science, technology, engineering, arts, and mathematics).</h3>
+      
+      
+          </div>
+        </div>
+        </div>
+      </section>
+                
+      <section class="pt-20 pb-24 md:pb-28 overflow-hidden bg"><div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -m-8">
+          <div class="w-full md:w-1/2 p-8">
+              <h1 class="text-6xl md:text-7xl text-white tracking-tighter-xl publicsansfont">Our Vision</h1>
+          </div>
+          <div class="w-full md:w-1/2 p-8">
+            <h3 class="mb-8 text-2xl text-white tracking-tighter publicsansfont">Our vision is to stand at the forefront of pioneering, innovative experiences that make science and STEAM accessible to people worldwide. We aspire to gain renown for inspiring future generations to delve into the captivating universe of scientific and technological wisdom, while instilling a culture of curiosity, creativity, and critical thinking. We are committed to being an inclusive, diverse, and collaborative organization, leaving a positive mark on education and contributing to the building of a more sustainable and equitable future for all.</h3>
+      
+      
+          </div>
+        </div>
+        </div>
+      </section>
+                
+      <section class="pt-20 pb-24 md:pb-28 overflow-hidden bg"><div class="container px-4 mx-auto">
+        <div class="flex flex-wrap -m-8">
+          <div class="w-full md:w-1/2 p-8">
+              <h1 class="text-6xl md:text-7xl text-white tracking-tighter-xl publicsansfont">Our Pledge</h1>
+          </div>
+          <div class="w-full md:w-1/2 p-8">
+            <h3 class="mb-8 text-2xl text-white tracking-tighter publicsansfont">We pledge to provide accessible, interactive, and modern platforms that bridge the gap between science and people from all walks of life. By nurturing curiosity, we empower the leaders and innovators of tomorrow, ensuring that the torch of scientific exploration burns brighter than ever before. Our ultimate goal is to encourage and equip individuals to not only explore the mysteries of the universe but also to actively participate in the ever-evolving landscape of scientific and technological progress.</h3>
+      
+      
+          </div>
+        </div>
+        </div>
+      </section>
+                
+      <section class="bg-white bg-no-repeat bg-center bg-cover bg-fixed overflow-hidden" style="background-image: url('images/08-lunar-landscape-valle-de-la-muerte-ATACAMA1217-3ca93b53291548e79457fdbb93e2785a-1.png');"><div class="py-40 bg-black bg-opacity-60" style="backdrop-filter: blur(12px);">
         <div class="container px-4 mx-auto">
           <div class="text-center max-w-3xl mx-auto">
       
-            <h2 class="mb-11 text-6xl md:text-8xl xl:text-10xl text-white text-center tracking-px-n leading-none publicsansfont" contenteditable="true">Let's Explore With Us</h2>
-            <p class="mb-11 text-white text-center tracking-px-n leading-none font-medium publicsansfont" contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit velit risus sit sed massa. Vivamus vel lorem egestas.</p>
+            <h2 class="mb-11 text-white text-center tracking-px-n leading-none publicsansfont text-3xl md:text-3xl xl:text-3xl" contenteditable="true">Join us in our mission to unveil the boundless opportunities that science, technology, and astronomy have to offer. Together, we will inspire a new generation of explorers and pioneers, embarking on a journey of knowledge, creativity, and infinite possibilities.</h2>
+      
             <div class="md:inline-block">
               <button class="py-4 px-6 w-full text-white font-semibold border border-indigo-700 rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 hover:bg-indigo-700 transition ease-in-out duration-200 buttonbg" type="button">Join Us Now</button>
             </div>
@@ -265,7 +224,7 @@
               <div class="lg:max-w-sm">
                 <a class="mb-8 inline-block" href="#">
                   <img src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt=""></a>
-                <p class="mb-20 text-gray-400 font-medium leading-relaxed md:max-w-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus interdum facilisis odio scelerisque vel neque.</p>
+                <p class="mb-20 text-gray-400 font-medium leading-relaxed md:max-w-xs manrope">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus interdum facilisis odio scelerisque vel neque.</p>
                 <div class="flex flex-wrap -m-1.5">
                   <div class="w-auto p-1.5">
                     <a href="#">

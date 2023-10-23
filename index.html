@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i|Manrope:200,300,400,500,600,700,800|Montserrat:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i|Exo:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin,latin-ext,cyrillic,greek,cyrillic-ext,vietnamese">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i|Manrope:200,300,400,500,600,700,800&amp;subset=latin,latin-ext,cyrillic,greek">
     <link href="https://fonts.cdnfonts.com/css/general-sans?styles=135312,135310,135313,135303" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
@@ -70,27 +70,23 @@
             </div>
             <div class="w-auto hidden lg:block">
               <nav class="navbar"><div class="w-auto hidden lg:block h-auto">
-                <ul class="flex items-center mr-16 font-bold hover:text-indigo-600">
-      <li class="mr-9 font-medium hover:text-indigo-600"><a href="index.html" class="font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow">HOME</a></li>
-                  <li>
-      <a href="about-us.html" class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow">ABOUT US</a>
-                  </li>
+                <ul class="flex items-center mr-16 font-bold hover:text-indigo-600"><li class="mr-9 font-medium hover:text-indigo-600"><a href="index.html" class="font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow">HOME</a></li>
+                  <li><a href="about-us.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">ABOUT US</a>
+                    <ul><li class="z-auto h-auto"><a href="meet-our-team.html" class="hover:text-indigo-600 publicsans">Meet Our Team
+                      </a></li>
+      
+                    </ul></li>
                   <li><a href="observatory.html" class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow">OBSERVATORY</a></li>
                   <li>
-      <a href="products.html" class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow">PRODUCT</a>
-                    <ul>
-      <li class="z-auto h-auto"><a href="young-astronomers.html" class="hover:text-indigo-600 publicsans">For Young Astronomers
-                      </a></li>
-                      <li><a href="parents-teachers.html" class="hover:text-indigo-600 publicsans">For Parents/Teachers
-                        </a></li>
-                      <li><a href="educational-institutions.html" class="hover:text-indigo-600 publicsans">For Educational Institutions</a></li>
-                    </ul>
-      </li>
+                    <a href="products.html" class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow">PRODUCT</a>
+                    <ul><li><a href="educational-institutions.html" class="hover:text-indigo-600 publicsans">For Educational Institutions</a></li>
+                      <li><a href="parents-teachers.html" class="hover:text-indigo-600 publicsans">For Parents/Teachers</a></li>
+                      <li class="z-auto h-auto"><a href="young-astronomers.html" class="hover:text-indigo-600 publicsans">For Young Astronomers</a></li>
+      
+                    </ul></li>
                   <li><a href="blog.html" class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow font-medium">BLOG</a></li>
                   <li><a href="contact-us.html" class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow">CONTACT</a></li>
-                </ul>
-      </div></nav>
-      </div>
+                </ul></div></nav></div>
           </div>
         </div>
         <div class="w-auto">
@@ -130,24 +126,26 @@
               </div>
             </div>
             <div class="flex flex-col justify-center py-16 w-full">
-              <ul>
-      <li class="mb-12">
-      <a class="font-medium hover:text-indigo-600 publicsans" href="#">HOME</a>
+              <ul><li class="mb-12">
+                <a class="font-medium hover:text-indigo-600 publicsans" href="#">HOME</a>
                 </li>
-                <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">ABOUT US</a></li>
+                <div class="dropdown relative"> 
+                  <button><li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="products.html">ABOUT US</a></li></button>
+                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"><li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="meet-our-team.html">MEET OUR TEAM</a></li>
+      
+                  </ul></div>
                 <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">OBSERVATORY</a></li>
                 <div class="dropdown relative"> 
                   <button><li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="products.html">PRODUCTS</a></li></button>
-                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1">
-      <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="young-astronomers.html">For Young Astronomers</a></li>
+                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"><li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="educational-institutions.html">For Educational Institutions</a></li>
                     <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="parents-teachers.html">For Parents/Teachers</a></li>
-                    <li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="educational-institutions.html">For Educational Institutions</a></li>
-                  </ul>
-      </div>
+      
+                    <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="young-astronomers.html">For Young Astronomers</a></li>
+      
+                  </ul></div>
                 <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">BLOG</a></li>
                 <li><a class="font-medium hover:text-indigo-600 publicsans" href="#">CONTACT</a></li>
-              </ul>
-      </div>
+              </ul></div>
             <div class="flex flex-col justify-end w-full pb-8">
               <div class="flex flex-wrap">
                 <div class="w-full mb-3">
@@ -163,8 +161,7 @@
               </div>
             </div>
             </div>
-          </nav>
-      </div>
+          </nav></div>
       
         <div class="md:w-1/2 p-8 w-full items-center"> </div>
         <div class="overflow-hidden pt-16 pb-48">
@@ -187,7 +184,7 @@
         <section class="py-36 mg:bg-contain bg-transparent"><div class="container px-4 mx-auto">
           <div class="flex flex-wrap xl:items-center -m-8">
             <div class="w-full md:w-1/2 p-8">
-              <h2 class="mb-5 font-bold font-heading tracking-px-n leading-tight font:text-5xl text-5xl publicsans">HI, I'M ATACAMASCOPE</h2>
+              
               <p class="mb-8 text-lg font-medium md:max-w-lg text-10xl normalspacing publicsanswhite">Operate a telescope in the best sky in the world.</p>
               <div class="mb-20 md:inline-block">
                 <button class="py-4 px-6 w-full text-white font-semibold rounded-xl border focus:ring focus:ring-indigo-300 bg-indigo-600 transition ease-in-out duration-200 buttonbg hover:bg-indigo-600 publicsansfont" type="button">CAPTURE A NEBULA</button>
@@ -210,32 +207,32 @@
                 
       <section class="py-24 bg-white bg"><div class="container px-4 mx-auto">
         <div class="max-w-xl text-center mx-auto mb-20">
-          <h2 class="font-heading mb-5 tracking-tighter text-10xl exo publicwhite">Why AtacamaScope?</h2>
+          <h2 class="font-heading mb-5 tracking-tighter exo publicwhite text-8xl font-bold">WHY ATACAMASCOPE?</h2>
       
         </div>
         <div class="flex flex-wrap -m-7 mb-14">
           <div class="w-full md:w-1/4 p-7">
             <div class="max-w-xs">
-              <img class="mx-auto" src="images/Asset-2.png" alt="" width="150"><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">The Universe, For Everybody</h3>
-              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Anyone can have access to our astronomical observatory</p>
+              <img class="mx-auto" src="images/Asset-2.png" alt="" width="150"><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite pt-3">The Universe, For Everybody</h3>
+              <p class="tracking-tight text-center publicsanswhitethin wafont" contenteditable="false">Anyone can have access to our astronomical observatory</p>
             </div>
           </div>
           <div class="w-full md:w-1/4 p-7">
             <div class="max-w-xs">
-              <img class="mx-auto" src="images/Asset-5.png" alt="" width="150"><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">Astronomy made simple</h3>
-              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Our platform can be used by beginners</p>
+              <img class="mx-auto" src="images/Asset-5.png" alt="" width="150"><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite pt-3">Astronomy made simple</h3>
+              <p class="tracking-tight text-center publicsanswhitethin wafont" contenteditable="false">Our platform can be used by beginners</p>
             </div>
           </div>
           <div class="w-full md:w-1/4 p-7">
             <div class="max-w-xs">
-              <img class="mx-auto" src="images/Asset-8.png" alt="" width="150"><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">Keeping learning interesting</h3>
-              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Practical teaching improves student's learning curve</p>
+              <img class="mx-auto" src="images/Asset-8.png" alt="" width="150"><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite pt-3">Keeping learning interesting</h3>
+              <p class="tracking-tight text-center publicsanswhitethin wafont" contenteditable="false">Practical teaching improves student's learning curve</p>
             </div>
           </div>
           <div class="w-full md:w-1/4 p-7">
             <div class="max-w-xs">
-              <img class="mx-auto" src="images/Asset-11.png" alt="" width="150"><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite">Affordable</h3>
-              <p class="tracking-tight text-center publicsanswhitethin" contenteditable="false">Astronomy without breaking the bank</p>
+              <img class="mx-auto" src="images/Asset-11.png" alt="" width="150"><h3 class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite pt-3">Affordable</h3>
+              <p class="tracking-tight text-center publicsanswhitethin wafont" contenteditable="false">Astronomy without breaking the bank</p>
             </div>
           </div>
         </div>
@@ -247,15 +244,16 @@
       </section>
                 
       <section class="py-28 bg-black bg-no-repeat bg-center bg-cover bg-fixed overflow-hidden" style='background: url("images/rancho-mirage4.jpg") 50% 50% / cover no-repeat fixed padding-box border-box rgb(0, 0, 0);'><div class="container px-4 mx-auto">
-          <div class="px-12 pt-12 pb-9 md:max-w-xl bg-black rounded-4xl opacity-50" style="backdrop-filter: blur(10px);">
-            <h3 class="mb-4 text-6xl md:text-7xl text-white font-bold font-heading tracking-px-n leading-tight" contenteditable="false">What is Astronomy?</h3>
-            
-            <p class="mb-11 text-lg text-gray-400 font-medium leading-normal">Lorem ipsum dolor sit amet, to the consectr adipiscing elit. Volutpat tempor to the condim entum vitae vel purus.</p>
-            <a class="inline-flex flex-wrap items-center text-white hover:text-gray-200" href="#">
+        <div class="px-12 pt-12 pb-9 md:max-w-xl bg-black rounded-4xl opacity-80" style="backdrop-filter: blur(10px);">
+          <h3 class="mb-4 text-6xl md:text-7xl text-white font-bold font-heading tracking-px-n leading-tight manrope" contenteditable="false">Welcome to our Atacama Desert Observatory</h3>
+      
+          <p class="mb-11 text-lg text-gray-400 font-medium leading-normal manrope">Nestled in the heart of the otherworldly Atacama Desert, our observatory is an oasis for stargazers, astronomers, and anyone fascinated by the mysteries of the cosmos. Situated in one of the most remarkable astronomical locations on the planet, our observatory offers a unique window into the universe, unmatched by any other.</p>
+      
+          <a class="inline-flex flex-wrap items-center text-white hover:text-gray-200" href="#">
       
       
-            </a>
-          </div>
+          </a>
+        </div>
         </div>
       </section>
                 
@@ -265,9 +263,9 @@
       
             <div class="publicsansfont md:max-w-2xl p-5">
               <p class="mb-8 font-sans text-sm text-indigo-600 font-semibold uppercase tracking-px">👋 Who We are</p>
-              <h2 class="mb-8 font-bold font-heading tracking-px-n leading-none text-white text-5xl md:text-6xl xl:text-7xl">A Community of Astronomers</h2>
-              <p class="mb-7 text-lg font-medium text-white">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
-              <p class="font-medium text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit velit risus sit sed massa. Vivamus vel lorem egestas.</p>
+              <h2 class="mb-8 font-bold font-heading tracking-px-n leading-none text-white text-5xl md:text-6xl xl:text-7xl manrope">A Community of Astronomers</h2>
+              <p class="mb-7 text-lg font-medium text-white manrope">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
+              <p class="font-medium text-white manrope">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit velit risus sit sed massa. Vivamus vel lorem egestas.</p>
             </div>
           </div>
           <div class="w-full md:w-1/2 p-4 lg:p-14">
@@ -279,38 +277,52 @@
       </section>
                 
       <section class="pt-24 pb-32 overflow-hidden bg"><div class="container px-4 mx-auto">
-        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"><h2 class="mb-5 text-white tracking-px-n leading-none publicsans text-left text-4xl md:text-6xl xl:text-8xl font-semibold">Trusted by</h2>
+        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+      <h2 class="mb-5 text-white tracking-px-n leading-none text-4xl md:text-6xl xl:text-8xl font-semibold midtext manrope">TRUSTED BY</h2>
       
       
-        <div class="flex flex-wrap items-center justify-center -m-4">
+        <div class="flex flex-wrap items-center justify-center -m-4 pt-5">
           <div class="w-auto p-4">
-            <img src="images/1-uvalparaiso-png-1694023284838.webp" alt=""></div>
+            <img src="images/1-uvalparaiso-png-1694023284838.webp" alt="">
+      </div>
           <div class="w-auto p-4">
-            <img src="images/2-sternfreunde-png-1694023371242.webp" alt=""></div>
+            <img src="images/2-sternfreunde-png-1694023371242.webp" alt="">
+      </div>
           <div class="w-auto p-4">
-            <img src="images/3-escuelaterritorioantartico-png-1694023395075.webp" alt=""></div>
+            <img src="images/3-escuelaterritorioantartico-png-1694023395075.webp" alt="">
+      </div>
           <div class="w-auto p-4">
-            <img src="images/4-fweduca-png-1694023413590.webp" alt=""></div>
+            <img src="images/4-fweduca-png-1694023413590.webp" alt="">
+      </div>
           <div class="w-auto p-4">
-            <img src="images/5-Prochile-png-1694023437583.webp" alt=""></div>
+            <img src="images/5-Prochile-png-1694023437583.webp" alt="">
+      </div>
           <div class="w-auto p-4">
-            <img src="images/6-LogosGOREyERI-png-1694023606656.webp" alt=""></div>
+            <img src="images/6-LogosGOREyERI-png-1694023606656.webp" alt="">
+      </div>
           <div class="w-auto p-4">
-            <img src="images/7-ComiteCorfoApoyado-png-1694023626781.webp" alt=""></div>
+            <img src="images/7-ComiteCorfoApoyado-png-1694023626781.webp" alt="">
+      </div>
           <div class="w-auto p-4">
-            <img src="images/8-logo-core-png-1694023647718.webp" alt=""></div>
+            <img src="images/8-logo-core-png-1694023647718.webp" alt="">
+      </div>
           <div class="w-auto p-4">
-            <img src="images/9-LatAm-White22-png-1694023673678.webp" alt=""></div>
+            <img src="images/9-LatAm-White22-png-1694023673678.webp" alt="">
+      </div>
           <div class="w-auto p-4">
-            <img src="images/10-accelerationplus-png-1694023697368.webp" alt=""></div>
+            <img src="images/10-accelerationplus-png-1694023697368.webp" alt="">
+      </div>
           <div class="w-auto p-4">
-            <img src="images/11-Aster-png-1694023714446.webp" alt=""></div>
+            <img src="images/11-Aster-png-1694023714446.webp" alt="">
+      </div>
           <div class="w-auto p-4">
-            <img src="images/12-Haltech-png-1694023730258.webp" alt=""></div>
+            <img src="images/12-Haltech-png-1694023730258.webp" alt="">
+      </div>
           
         </div>
       
-        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></div>
+        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+      </div>
       </section>
                 
       <section class="pt-24 pb-36 overflow-hidden bg"><div class="container px-4 mx-auto">
@@ -373,7 +385,7 @@
         <div class="container px-4 mx-auto">
           <div class="text-center max-w-3xl mx-auto">
       
-            <h2 class="mb-11 text-6xl md:text-8xl xl:text-10xl text-white text-center tracking-px-n leading-none publicsansfont" contenteditable="true">Let's Explore With Us</h2>
+            <h2 class="mb-11 text-6xl md:text-8xl xl:text-10xl text-white text-center tracking-px-n leading-none publicsansfont" contenteditable="true">Explore With Us</h2>
             <p class="mb-11 text-white text-center tracking-px-n leading-none font-medium publicsansfont" contenteditable="true">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit velit risus sit sed massa. Vivamus vel lorem egestas.</p>
             <div class="md:inline-block">
               <button class="py-4 px-6 w-full text-white font-semibold border border-indigo-700 rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 hover:bg-indigo-700 transition ease-in-out duration-200 buttonbg" type="button">Join Us Now</button>
@@ -390,7 +402,7 @@
               <div class="lg:max-w-sm">
                 <a class="mb-8 inline-block" href="#">
                   <img src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt=""></a>
-                <p class="mb-20 text-gray-400 font-medium leading-relaxed md:max-w-xs">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus interdum facilisis odio scelerisque vel neque.</p>
+                <p class="mb-20 text-gray-400 font-medium leading-relaxed md:max-w-xs manrope">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus interdum facilisis odio scelerisque vel neque.</p>
                 <div class="flex flex-wrap -m-1.5">
                   <div class="w-auto p-1.5">
                     <a href="#">

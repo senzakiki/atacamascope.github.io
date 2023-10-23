@@ -4,7 +4,7 @@ html(lang="en")
         meta(charset="utf-8")
         meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
         link(rel="preconnect", href="https://fonts.gstatic.com")
-        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Public+Sans:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i|Manrope:200,300,400,500,600,700,800|Montserrat:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i|Exo:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i&subset=latin,latin-ext,cyrillic,greek,cyrillic-ext,vietnamese")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Public+Sans:100,100i,200,200i,300,300i,400i,400,500,500i,600,600i,700,700i,800,800i,900,900i|Manrope:200,300,400,500,600,700,800&subset=latin,latin-ext,cyrillic,greek")
         link(href="https://fonts.cdnfonts.com/css/general-sans?styles=135312,135310,135313,135303", rel="stylesheet")
         link(href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap", rel="stylesheet")
         link(rel="stylesheet", href="css/tailwind/tailwind.min.css")
@@ -71,20 +71,22 @@ html(lang="en")
                                             li(class="mr-9 font-medium hover:text-indigo-600")
                                                 a(href="index.html", class="font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow") HOME
                                             li
-                                                a(href="about-us.html", class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow") ABOUT US
+                                                a(href="about-us.html", class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500") ABOUT US
+                                                ul
+                                                    li(class="z-auto h-auto")
+                                                        a(href="meet-our-team.html", class="hover:text-indigo-600 publicsans") Meet Our Team
+                                                        |                       
                                             li
                                                 a(href="observatory.html", class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow") OBSERVATORY
                                             li
                                                 a(href="products.html", class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow") PRODUCT
                                                 ul
-                                                    li(class="z-auto h-auto")
-                                                        a(href="young-astronomers.html", class="hover:text-indigo-600 publicsans") For Young Astronomers
-                                                        |                       
-                                                    li
-                                                        a(href="parents-teachers.html", class="hover:text-indigo-600 publicsans") For Parents/Teachers
-                                                        |                         
                                                     li
                                                         a(href="educational-institutions.html", class="hover:text-indigo-600 publicsans") For Educational Institutions
+                                                    li
+                                                        a(href="parents-teachers.html", class="hover:text-indigo-600 publicsans") For Parents/Teachers
+                                                    li(class="z-auto h-auto")
+                                                        a(href="young-astronomers.html", class="hover:text-indigo-600 publicsans") For Young Astronomers
                                             li
                                                 a(href="blog.html", class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow font-medium") BLOG
                                             li
@@ -121,8 +123,13 @@ html(lang="en")
                                 ul
                                     li(class="mb-12")
                                         a(class="font-medium hover:text-indigo-600 publicsans", href="#") HOME
-                                    li(class="mb-12")
-                                        a(class="font-medium hover:text-indigo-600 publicsans", href="#") ABOUT US
+                                    div(class="dropdown relative")
+                                        button
+                                            li(class="mb-12")
+                                                a(class="font-medium hover:text-indigo-600 publicsans", href="products.html") ABOUT US
+                                        ul(class="dropdown-menu absolute hidden text-gray-700 pt-1")
+                                            li(class="")
+                                                a(class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap", href="meet-our-team.html") MEET OUR TEAM
                                     li(class="mb-12")
                                         a(class="font-medium hover:text-indigo-600 publicsans", href="#") OBSERVATORY
                                     div(class="dropdown relative")
@@ -131,11 +138,11 @@ html(lang="en")
                                                 a(class="font-medium hover:text-indigo-600 publicsans", href="products.html") PRODUCTS
                                         ul(class="dropdown-menu absolute hidden text-gray-700 pt-1")
                                             li(class="")
-                                                a(class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap", href="young-astronomers.html") For Young Astronomers
+                                                a(class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap", href="educational-institutions.html") For Educational Institutions
                                             li(class="")
                                                 a(class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap", href="parents-teachers.html") For Parents/Teachers
                                             li(class="")
-                                                a(class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap", href="educational-institutions.html") For Educational Institutions
+                                                a(class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap", href="young-astronomers.html") For Young Astronomers
                                     li(class="mb-12")
                                         a(class="font-medium hover:text-indigo-600 publicsans", href="#") BLOG
                                     li
@@ -163,7 +170,6 @@ html(lang="en")
                     div(class="container px-4 mx-auto")
                         div(class="flex flex-wrap xl:items-center -m-8")
                             div(class="w-full md:w-1/2 p-8")
-                                h2(class="mb-5 font-bold font-heading tracking-px-n leading-tight font:text-5xl text-5xl publicsans") HI, I'M ATACAMASCOPE
                                 p(class="mb-8 text-lg font-medium md:max-w-lg text-10xl normalspacing publicsanswhite") Operate a telescope in the best sky in the world.
                                 div(class="mb-20 md:inline-block")
                                     button(class="py-4 px-6 w-full text-white font-semibold rounded-xl border focus:ring focus:ring-indigo-300 bg-indigo-600 transition ease-in-out duration-200 buttonbg hover:bg-indigo-600 publicsansfont", type="button") CAPTURE A NEBULA
@@ -176,54 +182,54 @@ html(lang="en")
             section(class="py-24 bg-white bg")
                 div(class="container px-4 mx-auto")
                     div(class="max-w-xl text-center mx-auto mb-20")
-                        h2(class="font-heading mb-5 tracking-tighter text-10xl exo publicwhite") Why AtacamaScope?
+                        h2(class="font-heading mb-5 tracking-tighter exo publicwhite text-8xl font-bold") WHY ATACAMASCOPE?
                     div(class="flex flex-wrap -m-7 mb-14")
                         div(class="w-full md:w-1/4 p-7")
                             div(class="max-w-xs")
                                 img(class="mx-auto", src="images/Asset-2.png", alt="", width="150")
-                                h3(class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite") The Universe, For Everybody
-                                p(class="tracking-tight text-center publicsanswhitethin", contenteditable="false") Anyone can have access to our astronomical observatory
+                                h3(class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite pt-3") The Universe, For Everybody
+                                p(class="tracking-tight text-center publicsanswhitethin wafont", contenteditable="false") Anyone can have access to our astronomical observatory
                         div(class="w-full md:w-1/4 p-7")
                             div(class="max-w-xs")
                                 img(class="mx-auto", src="images/Asset-5.png", alt="", width="150")
-                                h3(class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite") Astronomy made simple
-                                p(class="tracking-tight text-center publicsanswhitethin", contenteditable="false") Our platform can be used by beginners
+                                h3(class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite pt-3") Astronomy made simple
+                                p(class="tracking-tight text-center publicsanswhitethin wafont", contenteditable="false") Our platform can be used by beginners
                         div(class="w-full md:w-1/4 p-7")
                             div(class="max-w-xs")
                                 img(class="mx-auto", src="images/Asset-8.png", alt="", width="150")
-                                h3(class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite") Keeping learning interesting
-                                p(class="tracking-tight text-center publicsanswhitethin", contenteditable="false") Practical teaching improves student's learning curve
+                                h3(class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite pt-3") Keeping learning interesting
+                                p(class="tracking-tight text-center publicsanswhitethin wafont", contenteditable="false") Practical teaching improves student's learning curve
                         div(class="w-full md:w-1/4 p-7")
                             div(class="max-w-xs")
                                 img(class="mx-auto", src="images/Asset-11.png", alt="", width="150")
-                                h3(class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite") Affordable
-                                p(class="tracking-tight text-center publicsanswhitethin", contenteditable="false") Astronomy without breaking the bank
+                                h3(class="mb-4 text-xl font-semibold tracking-tight text-center publicsanswhite pt-3") Affordable
+                                p(class="tracking-tight text-center publicsanswhitethin wafont", contenteditable="false") Astronomy without breaking the bank
                     div(class="flex flex-row justify-center")
             section(class="py-28 bg-black bg-no-repeat bg-center bg-cover bg-fixed overflow-hidden", style="background: url("images/rancho-mirage4.jpg") 50% 50% / cover no-repeat fixed padding-box border-box rgb(0, 0, 0);")
                 div(class="container px-4 mx-auto")
-                    div(class="px-12 pt-12 pb-9 md:max-w-xl bg-black rounded-4xl opacity-50", style="backdrop-filter: blur(10px);")
-                        h3(class="mb-4 text-6xl md:text-7xl text-white font-bold font-heading tracking-px-n leading-tight", contenteditable="false") What is Astronomy?
-                        p(class="mb-11 text-lg text-gray-400 font-medium leading-normal") Lorem ipsum dolor sit amet, to the consectr adipiscing elit. Volutpat tempor to the condim entum vitae vel purus.
+                    div(class="px-12 pt-12 pb-9 md:max-w-xl bg-black rounded-4xl opacity-80", style="backdrop-filter: blur(10px);")
+                        h3(class="mb-4 text-6xl md:text-7xl text-white font-bold font-heading tracking-px-n leading-tight manrope", contenteditable="false") Welcome to our Atacama Desert Observatory
+                        p(class="mb-11 text-lg text-gray-400 font-medium leading-normal manrope") Nestled in the heart of the otherworldly Atacama Desert, our observatory is an oasis for stargazers, astronomers, and anyone fascinated by the mysteries of the cosmos. Situated in one of the most remarkable astronomical locations on the planet, our observatory offers a unique window into the universe, unmatched by any other.
                         a(class="inline-flex flex-wrap items-center text-white hover:text-gray-200", href="#")       
                         |       
-                        |             
+                        |           
             section(class="py-36 overflow-hidden bg")
                 div(class="container px-4 mx-auto")
                     div(class="flex flex-wrap lg:items-center -m-8 lg:-m-14")
                         div(class="w-full p-4 lg:p-14 md:w-1/2")
                             div(class="publicsansfont md:max-w-2xl p-5")
                                 p(class="mb-8 font-sans text-sm text-indigo-600 font-semibold uppercase tracking-px") 👋 Who We are
-                                h2(class="mb-8 font-bold font-heading tracking-px-n leading-none text-white text-5xl md:text-6xl xl:text-7xl") A Community of Astronomers
-                                p(class="mb-7 text-lg font-medium text-white") Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.
-                                p(class="font-medium text-white") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit velit risus sit sed massa. Vivamus vel lorem egestas.
+                                h2(class="mb-8 font-bold font-heading tracking-px-n leading-none text-white text-5xl md:text-6xl xl:text-7xl manrope") A Community of Astronomers
+                                p(class="mb-7 text-lg font-medium text-white manrope") Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.
+                                p(class="font-medium text-white manrope") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit velit risus sit sed massa. Vivamus vel lorem egestas.
                         div(class="w-full md:w-1/2 p-4 lg:p-14")
                             div(class="relative max-w-max mx-auto lg:ml-auto lg:mr-0 overflow-hidden rounded-4xl")
                                 img(class="transform hover:scale-105 transition ease-in-out duration-1000", src="images/shutterstock-1141143581.jpg", alt="")
             section(class="pt-24 pb-32 overflow-hidden bg")
                 div(class="container px-4 mx-auto")
                     hr(class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700")
-                    h2(class="mb-5 text-white tracking-px-n leading-none publicsans text-left text-4xl md:text-6xl xl:text-8xl font-semibold") Trusted by
-                    div(class="flex flex-wrap items-center justify-center -m-4")
+                    h2(class="mb-5 text-white tracking-px-n leading-none text-4xl md:text-6xl xl:text-8xl font-semibold midtext manrope") TRUSTED BY
+                    div(class="flex flex-wrap items-center justify-center -m-4 pt-5")
                         div(class="w-auto p-4")
                             img(src="images/1-uvalparaiso-png-1694023284838.webp", alt="")
                         div(class="w-auto p-4")
@@ -285,7 +291,7 @@ html(lang="en")
                 div(class="py-40 bg-black bg-opacity-20", style="backdrop-filter: blur(12px);")
                     div(class="container px-4 mx-auto")
                         div(class="text-center max-w-3xl mx-auto")
-                            h2(class="mb-11 text-6xl md:text-8xl xl:text-10xl text-white text-center tracking-px-n leading-none publicsansfont", contenteditable="true") Let's Explore With Us
+                            h2(class="mb-11 text-6xl md:text-8xl xl:text-10xl text-white text-center tracking-px-n leading-none publicsansfont", contenteditable="true") Explore With Us
                             p(class="mb-11 text-white text-center tracking-px-n leading-none font-medium publicsansfont", contenteditable="true") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit velit risus sit sed massa. Vivamus vel lorem egestas.
                             div(class="md:inline-block")
                                 button(class="py-4 px-6 w-full text-white font-semibold border border-indigo-700 rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 hover:bg-indigo-700 transition ease-in-out duration-200 buttonbg", type="button") Join Us Now
@@ -298,7 +304,7 @@ html(lang="en")
                                 div(class="lg:max-w-sm")
                                     a(class="mb-8 inline-block", href="#")
                                         img(src="images/LogoEnBlancoAlpha-png-1693329791468.webp", alt="")
-                                    p(class="mb-20 text-gray-400 font-medium leading-relaxed md:max-w-xs") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus interdum facilisis odio scelerisque vel neque.
+                                    p(class="mb-20 text-gray-400 font-medium leading-relaxed md:max-w-xs manrope") Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lectus interdum facilisis odio scelerisque vel neque.
                                     div(class="flex flex-wrap -m-1.5")
                                         div(class="w-auto p-1.5")
                                             a(href="#")
