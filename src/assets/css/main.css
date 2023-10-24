@@ -84,14 +84,16 @@
 .bgdarkpurple {
   background-color: #2d2e5f
 }
+.atacamayellowbg,
+.atacamayellowbg.buttonbg,
+.bgdarkyellow {
+  background-color: #f1c40f
+}
 .bgcomet {
   background-image: url("../images/IMG-1626.JPG");
   background-size: cover;
   background-repeat-x: no-repeat;
   background-repeat-y: no-repeat
-}
-.bgdarkyellow {
-  background-color: #f1c40f
 }
 .publicpurple {
   color: #7856ff
@@ -109,5 +111,14 @@
 .manrope.whitecolor,
 .publicsanspurple.whitecolor {
   color: #fff
+}
+.exo.publicpurple {
+  font-family: Montserrat,sans-serif
+}
+.atacamagraybg {
+  background-color: #403f45
+}
+.aboutustext {
+  font-size: 20px
 }
 
