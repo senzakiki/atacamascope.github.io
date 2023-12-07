@@ -13,16 +13,19 @@
     <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
     <script src="js/main.js"></script>
     <style>
-        .dropdown:hover .dropdown-menu {
-  display: block;
-}
-
+        @tailwind base;@tailwind components;@tailwind utilities;
+    </style>
+    <style>
+        html,body {  font-family: 'Droid Serif', serif;}h1 {  font-size: 60px;  text-align: center;}.content-slider {  width: 100%;  height: 360px;}.slider {  height: 320px;  width: 680px;  margin: 40px auto 0;  overflow: visible;  position: relative;}.mask {  overflow: hidden;  height: 320px;}.slider ul {  margin: 0;  padding: 0;  position: relative;}.slider li {  width: 680px;  height: 320px;  position: absolute;  top: -325px;  list-style: none;}.slider .quote {  font-size: 40px;  font-style: italic;}.slider .source {  font-size: 20px;  text-align: right;}.slider li.anim1 {  animation: cycle 15s linear infinite;}.slider li.anim2 {  animation: cycle2 15s linear infinite;}.slider li.anim3 {  animation: cycle3 15s linear infinite;}.slider li.anim4 {  animation: cycle4 15s linear infinite;}.slider li.anim5 {  animation: cycle5 15s linear infinite;}.slider:hover li {  animation-play-state: paused;}@keyframes cycle {  0% {    top: 0px;  }  4% {    top: 0px;  }  16% {    top: 0px;    opacity: 1;    z-index: 0;  }  20% {    top: 325px;    opacity: 0;    z-index: 0;  }  21% {    top: -325px;    opacity: 0;    z-index: -1;  }  50% {    top: -325px;    opacity: 0;    z-index: -1;  }  92% {    top: -325px;    opacity: 0;    z-index: 0;  }  96% {    top: -325px;    opacity: 0;  }  100% {    top: 0px;    opacity: 1;  }}@keyframes cycle2 {  0% {    top: -325px;    opacity: 0;  }  16% {    top: -325px;    opacity: 0;  }  20% {    top: 0px;    opacity: 1;  }  24% {    top: 0px;    opacity: 1;  }  36% {    top: 0px;    opacity: 1;    z-index: 0;  }  40% {    top: 325px;    opacity: 0;    z-index: 0;  }  41% {    top: -325px;    opacity: 0;    z-index: -1;  }  100% {    top: -325px;    opacity: 0;    z-index: -1;  }}@keyframes cycle3 {  0% {    top: -325px;    opacity: 0;  }  36% {    top: -325px;    opacity: 0;  }  40% {    top: 0px;    opacity: 1;  }  44% {    top: 0px;    opacity: 1;  }  56% {    top: 0px;    opacity: 1;    z-index: 0;  }  60% {    top: 325px;    opacity: 0;    z-index: 0;  }  61% {    top: -325px;    opacity: 0;    z-index: -1;  }  100% {    top: -325px;    opacity: 0;    z-index: -1;  }}@keyframes cycle4 {  0% {    top: -325px;    opacity: 0;  }  56% {    top: -325px;    opacity: 0;  }  60% {    top: 0px;    opacity: 1;  }  64% {    top: 0px;    opacity: 1;  }  76% {    top: 0px;    opacity: 1;    z-index: 0;  }  80% {    top: 325px;    opacity: 0;    z-index: 0;  }  81% {    top: -325px;    opacity: 0;    z-index: -1;  }  100% {    top: -325px;    opacity: 0;    z-index: -1;  }}@keyframes cycle5 {  0% {    top: -325px;    opacity: 0;  }  76% {    top: -325px;    opacity: 0;  }  80% {    top: 0px;    opacity: 1;  }  84% {    top: 0px;    opacity: 1;  }  96% {    top: 0px;    opacity: 1;    z-index: 0;  }  100% {    top: 325px;    opacity: 0;    z-index: 0;  }}
+    </style>
+    <style>
+        .dropdown:hover .dropdown-menu {  display: block;}
     </style>
     <style>
         .dropdown-container {  display: none;  background-color: #262626;  padding-left: 8px;}
     </style>
     <style>
-        .navbar ul ul li a:hover {background-color: #2D2E5F;}
+        .navbar ul ul li a:hover {background-color: #ffea94;}
     </style>
     <style>
         .navbar ul ul li {display: block;}.navbar li:hover ul {display: block;}
@@ -43,10 +46,10 @@
         .navbar {position: relative;z-index: 999;}
     </style>
     <style>
-        .dropdown-content a:hover {background-color: #2D2E5F;  }
+        .dropdown-content a:hover {background-color:#ffea94;  }
     </style>
     <style>
-        .dropdown-content a {      display: block;      color: #2D2E5F;      padding: 5px;      text-decoration: none;  }
+        .dropdown-content a {      display: block;      color: #ffea94;      padding: 5px;      text-decoration: none;  }
     </style>
     <style>
         .dropdown:hover .dropdown-content {      display: block;  }
@@ -55,6 +58,27 @@
         .dropdown-content {      display: none;      position: absolute;      width: 100%;      overflow: auto;      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);  }
     </style>
     <script type="text/javascript">
+        /** @type {import('tailwindcss').Config} */
+module.exports = {
+  theme: {
+    extend: {
+      animation: {
+        typewriter: "typewriter 2s steps(11) forwards"
+      },
+      keyframes: {
+        typewriter: {
+          to: {
+            left: "100%"
+          }
+        }
+      }
+    },
+  },
+  plugins: [],
+}
+
+    </script>
+    <script type="text/javascript">
         $('.sub-menu ul').hide();$(".sub-menu a").click(function () {	$(this).parent(".sub-menu").children("ul").slideToggle("100");	$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");});
     </script>
 </head>
@@ -62,152 +86,144 @@
     <div class="">
                 
       <section class="bgcomet bg-no-repeat bg-cover bg-fixed relative overflow-hidden h-full bg-center" style="background-image"><div class="top-0 flex items-center justify-between px-4 py-5 w-full relative bg-transparent">
-        <div class="w-auto">
-          <div class="flex flex-wrap items-center">
-            <div class="w-auto mr-14">
-              <a href="index.html">
-                <img src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt="" class="transform hover:scale-110 transition ease-in-out duration-500"></a>
-            </div>
-            <div class="w-auto hidden lg:block">
-              <nav class="navbar"><div class="w-auto hidden lg:block h-auto">
-                <ul class="flex items-center mr-16 font-bold hover:text-indigo-600"><li class="mr-9 font-medium hover:text-indigo-600"><a href="index.html" class="font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow">HOME</a></li>
-                  <li><a href="about-us.html" class="mr-9 publicsans font-bold hover:text-indigo-600 transition ease-in-out duration-500">ABOUT US</a>
-                    <ul><li class="z-auto h-auto"><a href="meet-our-team.html" class="hover:text-indigo-600 publicsans">Meet Our Team
-                      </a></li>
-      
-                    </ul></li>
-                  <li><a href="observatory.html" class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow">OBSERVATORY</a></li>
-                  <li>
-                    <a href="products.html" class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow">PRODUCT</a>
-                    <ul><li><a href="educational-institutions.html" class="hover:text-indigo-600 publicsans">For Educational Institutions</a></li>
-                      <li><a href="parents-teachers.html" class="hover:text-indigo-600 publicsans">For Parents/Teachers</a></li>
-                      <li class="z-auto h-auto"><a href="young-astronomers.html" class="hover:text-indigo-600 publicsans">For Young Astronomers</a></li>
-      
-                    </ul></li>
-                  <li><a href="blog.html" class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow font-medium">BLOG</a></li>
-                  <li><a href="contact-us.html" class="mr-9 font-bold hover:text-indigo-600 transition ease-in-out duration-500 exo publicyellow">CONTACT</a></li>
-                </ul></div></nav></div>
-          </div>
-        </div>
-        <div class="w-auto">
-          <div class="flex flex-wrap items-center">
-            <div class="w-auto hidden mr-5 lg:block">
-              <div class="inline-block">
-      
+          <div class="w-auto">
+            <div class="flex flex-wrap items-center">
+              <div class="w-auto mr-14">
+                <a href="index.html">
+                  <img src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt="" class="transform hover:scale-110 transition ease-in-out duration-500"></a>
               </div>
-            </div>
-            <div class="w-auto hidden lg:block">
-              <div class="inline-block">
-                <button class="w-full font-semibold rounded-xl focus:ring transition ease-in-out duration-200 publicsanspurple font-bold px-10 py-3" type="button">
-                  <img src="images/Account-Thumbnail-png-1693514926644.webp" alt="" class="rounded shadow-md inline" width="20"> ACCOUNT </button>
-              </div>
-            </div>
-            <div class="w-auto lg:hidden">
-              <a href="#">
-                <svg class="navbar-burger text-indigo-600" width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="56" height="56" rx="28" fill="currentColor"></rect><path d="M37 32H19M37 24H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+              <div class="w-auto hidden lg:block">
+                <nav class="navbar"><div class="w-auto hidden lg:block h-auto">
+                    <ul class="flex items-center mr-16 font-bold hover:text-blueGray-700"><li class="mr-9 font-medium hover:text-indigo-600"><a href="index.html" class="font-bold transition ease-in-out duration-500 exo publicyellow hover:text-blueGray-700">HOME</a></li>
+                      <li>
+                        <a href="about-us.html" class="mr-9 publicsans font-bold transition ease-in-out duration-500 hover:text-blueGray-700">ABOUT US</a>
+                        <ul><li class="z-auto h-auto"><a href="meet-our-team.html" class="publicsans hover:text-black" contenteditable="false">Meet Our Team</a></li>
+                        </ul></li>
+                      <li><a href="observatory.html" class="mr-9 font-bold transition ease-in-out duration-500 exo publicyellow hover:text-blueGray-700">OBSERVATORY</a></li>
+                      <li>
+                        <a class="mr-9 font-bold transition ease-in-out duration-500 exo publicyellow hover:text-blueGray-700">PRODUCT</a>
+                        <ul><li><a href="educational-institutions.html" class="publicsans hover:text-black">For Educational Institutions</a></li>
+                          <li><a href="parents-teachers.html" class="publicsans hover:text-black">For Parents/Teachers</a></li>
+                          <li class="z-auto h-auto"><a href="young-astronomers.html" class="publicsans hover:text-black">For Young Astronomers</a></li>
+                        </ul></li>
+                      <li><a href="blog.html" class="mr-9 font-bold transition ease-in-out duration-500 exo publicyellow font-medium hover:text-blueGray-700">BLOG</a></li>
+                      <li><a href="contact-us.html" class="mr-9 font-bold transition ease-in-out duration-500 exo publicyellow hover:text-blueGray-700">CONTACT</a></li>
+                    </ul></div>
+                </nav></div>
             </div>
           </div>
-        </div>
+          <div class="w-auto">
+            <div class="flex flex-wrap items-center">
+              <div class="w-auto hidden mr-5 lg:block">
+                <div class="inline-block"></div>
+              </div>
+              <div class="w-auto hidden lg:block">
+                <div class="inline-block">
+                  <a href="https://atacamascope.cl/login">
+                    <button class="w-full font-semibold rounded-xl focus:ring transition ease-in-out duration-200 font-bold px-10 py-3 bgyellow publicsansblack" type="button">ACCOUNT</button>
+                  </a>
+                </div>
+              </div>
+              <div class="w-auto lg:hidden">
+                <a href="#">
+                  <svg class="navbar-burger text-indigo-600" width="51" height="51" viewbox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="56" height="56" rx="28" fill="#111827"></rect><path d="M37 32H19M37 24H19" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="navbar-menu fixed top-0 left-0 bottom-0 w-4/6 sm:max-w-xs z-50 hidden">
           <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-80"></div>
           <nav class="relative z-10 px-9 pt-8 bg h-full overflow-y-auto"><div class="flex flex-wrap justify-between h-full">
-            <div class="w-full">
-              <div class="flex items-center justify-between -m-2">
-                <div class="w-auto p-2">
-      
-                  <a class="inline-block" href="#">
-                    <img src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt=""></a>
-                </div>
-                <div class="w-auto p-2">
-                  <a class="navbar-burger" href="#">
-                    <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 6M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
-                </div>
-              </div>
-            </div>
-            <div class="flex flex-col justify-center py-16 w-full">
-              <ul><li class="mb-12">
-                <a class="font-medium hover:text-indigo-600 publicsans" href="#">HOME</a>
-                </li>
-                <div class="dropdown relative"> 
-                  <button><li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="products.html">ABOUT US</a></li></button>
-                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"><li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="meet-our-team.html">MEET OUR TEAM</a></li>
-      
-                  </ul></div>
-                <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">OBSERVATORY</a></li>
-                <div class="dropdown relative"> 
-                  <button><li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="products.html">PRODUCTS</a></li></button>
-                  <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"><li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="educational-institutions.html">For Educational Institutions</a></li>
-                    <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="parents-teachers.html">For Parents/Teachers</a></li>
-      
-                    <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="young-astronomers.html">For Young Astronomers</a></li>
-      
-                  </ul></div>
-                <li class="mb-12"><a class="font-medium hover:text-indigo-600 publicsans" href="#">BLOG</a></li>
-                <li><a class="font-medium hover:text-indigo-600 publicsans" href="#">CONTACT</a></li>
-              </ul></div>
-            <div class="flex flex-col justify-end w-full pb-8">
-              <div class="flex flex-wrap">
-                <div class="w-full mb-3">
-                  <div class="block">
+              <div class="w-full">
+                <div class="flex items-center justify-between -m-2">
+                  <div class="w-auto p-2">
+                    <a class="inline-block" href="#">
+                      <img src="images/LogoEnBlancoAlpha-png-1693329791468.webp" alt=""></a>
                   </div>
-                </div>
-                <div class="w-full">
-                  <div class="block">
-                    <button class="w-full font-semibold rounded-xl focus:ring transition ease-in-out duration-200 publicsanspurple font-bold px-10 py-3" type="button">
-                      <img src="images/Account-Thumbnail-png-1693514926644.webp" alt="" class="rounded shadow-md inline" width="20"> ACCOUNT </button>
+                  <div class="w-auto p-2">
+                    <a class="navbar-burger" href="#">
+                      <svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 18L18 6M6 6L18 18" stroke="#111827" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
                   </div>
                 </div>
               </div>
-            </div>
+              <div class="flex flex-col justify-center py-16 w-full">
+                <ul><li class="mb-12"><a class="font-medium hover:hover:text-blueGray-700 publicsans" href="#">HOME</a></li>
+                  <div class="dropdown relative">
+                    <button>
+                      <li class="mb-12"><a class="font-medium hover:text-blueGray-700 publicsans" href="products.html">ABOUT US</a></li>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"><li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="meet-our-team.html">MEET OUR TEAM</a></li>
+                    </ul></div>
+                  <li class="mb-12"><a class="font-medium hover:text-blueGray-700 publicsans" href="#">OBSERVATORY</a></li>
+                  <div class="dropdown relative">
+                    <button>
+                      <li class="mb-12"><a class="font-medium hover:text-blueGray-700 publicsans">PRODUCTS</a></li>
+                    </button>
+                    <ul class="dropdown-menu absolute hidden text-gray-700 pt-1"><li class=""><a class="rounded-b bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="educational-institutions.html">For Educational Institutions</a></li>
+                      <li class=""><a class="bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="parents-teachers.html">For Parents/Teachers</a></li>
+                      <li class=""><a class="rounded-t bg-gray-200 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap" href="young-astronomers.html">For Young Astronomers</a></li>
+                    </ul></div>
+                  <li class="mb-12"><a class="font-medium hover:text-blueGray-700 publicsans" href="#">BLOG</a></li>
+                  <li><a class="font-medium hover:text-blueGray-700 publicsans" href="#">CONTACT</a></li>
+                </ul></div>
+              <div class="flex flex-col justify-end w-full pb-8">
+                <div class="flex flex-wrap">
+                  <div class="w-full mb-3">
+                    <div class="block"></div>
+                  </div>
+                  <div class="w-full">
+                    <div class="block">
+                      <a href="https://atacamascope.cl/login">
+                        <button class="w-full font-semibold rounded-xl focus:ring transition ease-in-out duration-200 publicsanspurple font-bold px-10 py-3" type="button">
+                          <img src="images/Account-Thumbnail-png-1693514926644.webp" alt="" class="rounded shadow-md inline" width="20">
+                          ACCOUNT
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </nav></div>
-      
-        <div class="md:w-1/2 p-8 w-full items-center"> </div>
+        <div class="md:w-1/2 p-8 w-full items-center"></div>
         <div class="overflow-hidden pt-16 pb-48">
           <div class="relative container px-4 mx-auto">
             <div class="-m-8 flex flex-wrap">
               <div class="md:w-1/2 p-8 w-full items-center">
-                <h1 class="mb-9 font-bold font-heading leading-none text-12xl drop-shadow-2xl exowhite">THE UNIVERSE, JUST A CLICK AWAY</h1>
+                <h1 class="font-bold font-heading leading-none text-12xl drop-shadow-2xl exowhite mb-10" contenteditable="false">The Universe, Just a Click Away</h1>
                 <div>
                   <p class="mb-9 text-xl text-gray-900 font-medium publicsanswhite transition ease-in-out duration-500">We provide easy-to-use &amp; affordable tool for parents &amp; educators who are interested in teaching astronomy as part of children's STEAM education.</p>
                   <div class="mb-12 md:inline-block">
-                    <button class="py-4 px-6 w-full font-semibold rounded-xl focus:ring transition ease-in-out duration-200 font-black manrope atacamayellowbg hover:text-white hover:bg-gray-700" type="button">EXPLORE NOW</button>
+                    <button class="py-4 px-6 w-full font-semibold rounded-xl focus:ring transition ease-in-out duration-200 font-black manrope atacamayellowbg hover:text-white hover:bg-gray-700" type="button">Explore Now</button>
                   </div>
-      
-      
                 </div>
               </div>
             </div>
           </div>
         </div>
         <section class="py-36 mg:bg-contain bg-transparent"><div class="container px-4 mx-auto">
-          <div class="flex flex-wrap xl:items-center -m-8">
-            <div class="w-full md:w-1/2 p-8">
-      
-              <p class="mb-8 text-lg font-medium md:max-w-lg text-10xl normalspacing publicsanswhite">Operate a telescope in the best sky in the world.</p>
-              <div class="mb-20 md:inline-block">
-                <button class="py-4 px-6 w-full font-semibold rounded-xl focus:ring transition ease-in-out duration-200 font-black manrope atacamayellowbg hover:text-white hover:bg-gray-700" type="button">CAPTURE A NEBULA</button>
-              </div>
-              <div class="flex flex-wrap -m-8">
-                <div class="w-full md:w-1/2 p-8">
-      
+            <div class="flex flex-wrap xl:items-center -m-8">
+              <div class="w-full md:w-1/2 p-8">
+                <p class="mb-8 font-medium normalspacing publicsanswhite text-7xl">Operate a telescope in the best sky in the world.</p>
+                <div class="mb-20 md:inline-block">
+                  <button class="py-4 px-6 w-full font-semibold rounded-xl focus:ring transition ease-in-out duration-200 font-black manrope atacamayellowbg hover:text-white hover:bg-gray-700" type="button">Capture a Nebula</button>
                 </div>
-      
+                <div class="flex flex-wrap -m-8">
+                  <div class="w-full md:w-1/2 p-8"></div>
+                </div>
+              </div>
+              <div class="w-full md:w-1/2 p-8">
+                <div class="relative" style="padding-bottom: 56.25%">
+                  <iframe src="https://www.youtube.com/embed/wN-mZtbX2Pg?si=Z7PFIwJZEVAUDAKn" frameborder="0" class="absolute w-full h-full" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
               </div>
             </div>
-            <div class="w-full md:w-1/2 p-8">
-              <div class="relative" style="padding-bottom: 56.25%">
-                <iframe src="https://www.youtube.com/embed/wN-mZtbX2Pg?si=Z7PFIwJZEVAUDAKn" frameborder="0" class="absolute w-full h-full" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
-              </div>
-            </div>
-          </div>
           </div>
         </section></section>
                 
       <section class="py-24 bg-white bg"><div class="container px-4 mx-auto">
         <div class="max-w-xl text-center mx-auto mb-20">
-          <h2 class="font-heading mb-5 tracking-tighter exo publicwhite text-8xl font-bold">WHY ATACAMASCOPE?</h2>
+          <h2 class="font-heading mb-5 tracking-tighter exo publicwhite text-8xl font-bold">Why AtacamaScope?</h2>
       
         </div>
         <div class="flex flex-wrap -m-7 mb-14">
@@ -243,42 +259,18 @@
       
       </section>
                 
-      <section class="py-28 bg-black bg-no-repeat bg-center bg-cover bg-fixed overflow-hidden" style='background: url("images/rancho-mirage4.jpg") 50% 50% / cover no-repeat fixed padding-box border-box rgb(0, 0, 0);'><div class="container px-4 mx-auto">
-        <div class="px-12 pt-12 pb-9 md:max-w-xl bg-black rounded-4xl opacity-80" style="backdrop-filter: blur(10px);">
-          <h3 class="mb-4 text-6xl md:text-7xl text-white font-bold font-heading tracking-px-n leading-tight manrope" contenteditable="false">Welcome to our Atacama Desert Observatory</h3>
-      
-          <p class="mb-11 text-lg text-gray-400 font-medium leading-normal manrope">Nestled in the heart of the otherworldly Atacama Desert, our observatory is an oasis for stargazers, astronomers, and anyone fascinated by the mysteries of the cosmos. Situated in one of the most remarkable astronomical locations on the planet, our observatory offers a unique window into the universe, unmatched by any other.</p>
-      
-          <a class="inline-flex flex-wrap items-center text-white hover:text-gray-200" href="#">
-      
-      
-          </a>
-        </div>
-        </div>
-      </section>
-                
-      <section class="py-36 overflow-hidden bg"><div class="container px-4 mx-auto">
-        <div class="flex flex-wrap lg:items-center -m-8 lg:-m-14">
-          <div class="w-full p-4 lg:p-14 md:w-1/2">
-      
-            <div class="publicsansfont md:max-w-2xl p-5">
-              <p class="mb-8 font-sans text-sm text-indigo-600 font-semibold uppercase tracking-px">👋 Who We are</p>
-              <h2 class="mb-8 font-bold font-heading tracking-px-n leading-none text-white text-5xl md:text-6xl xl:text-7xl manrope">A Community of Astronomers</h2>
-              <p class="mb-7 text-lg font-medium text-white manrope">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
-              <p class="font-medium text-white manrope">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit velit risus sit sed massa. Vivamus vel lorem egestas.</p>
-            </div>
+      <section class="py-28 bg-black bg-no-repeat bg-center bg-cover bg-fixed overflow-hidden" style="background: url('images/WhatsApp-Image-2023-12-06-at-20-59-44.jpeg') 50% 50% / cover no-repeat fixed padding-box border-box rgb(0, 0, 0);"><div class="container px-4 mx-auto">
+          <div class="px-12 pt-12 pb-9 md:max-w-xl bg-black rounded-4xl opacity-80" style="backdrop-filter: blur(10px);">
+            <h3 class="mb-4 text-6xl md:text-7xl text-white font-bold font-heading tracking-px-n leading-tight manrope" contenteditable="false">Welcome to our Atacama Desert Observatory</h3>
+            <p class="mb-11 text-lg text-gray-400 font-medium leading-normal manrope">Nestled in the heart of the otherworldly Atacama Desert, our observatory is an oasis for stargazers, astronomers, and anyone fascinated by the mysteries of the cosmos. Situated in one of the most remarkable astronomical locations on the planet, our observatory offers a unique window into the universe, unmatched by any other.</p>
+            <a class="inline-flex flex-wrap items-center text-white hover:text-gray-200" href="#"></a>
           </div>
-          <div class="w-full md:w-1/2 p-4 lg:p-14">
-            <div class="relative max-w-max mx-auto lg:ml-auto lg:mr-0 overflow-hidden rounded-4xl">
-              <img class="transform hover:scale-105 transition ease-in-out duration-1000" src="images/shutterstock-1141143581.jpg" alt=""></div>
-          </div>
-        </div>
         </div>
       </section>
                 
       <section class="pt-24 pb-32 overflow-hidden bg"><div class="container px-4 mx-auto">
-        <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
-      <h2 class="mb-5 text-white tracking-px-n leading-none text-4xl md:text-6xl xl:text-8xl font-semibold midtext manrope">TRUSTED BY</h2>
+        
+      <h2 class="mb-5 text-white tracking-px-n leading-none text-4xl md:text-6xl xl:text-8xl font-semibold midtext manrope">Trusted By</h2>
       
       
         <div class="flex flex-wrap items-center justify-center -m-4 pt-5">
@@ -325,9 +317,40 @@
       </div>
       </section>
                 
+      <section class="py-36 overflow-hidden bg"><div class="container px-4 mx-auto">
+          <p class="mb-8 font-sans text-sm font-semibold uppercase tracking-px publicsanswhite text-center">What our clients say</p>
+          <div class="content-slider">
+            <div class="slider">
+              <div class="mask">
+                <ul><li class="anim1">
+                    <div class="quote publicsanswhite">Hello, this is a quote from a person.</div>
+                    <div class="source publicsanswhite">- Person</div>
+                  </li>
+                  <li class="anim2">
+                    <div class="quote publicsanswhite">Hello, this is a quote from another person.</div>
+                    <div class="source publicsanswhite">- Another person</div>
+                  </li>
+                  <li class="anim3">
+                    <div class="quote publicsanswhite">Hello, this is a quote from an animal.</div>
+                    <div class="source publicsanswhite">- Animal</div>
+                  </li>
+                  <li class="anim4">
+                    <div class="quote publicsanswhite">Hello, this is a quote from a plant.</div>
+                    <div class="source publicsanswhite">- Plant</div>
+                  </li>
+                  <li class="anim5">
+                    <div class="quote publicsanswhite">How do ya like that.</div>
+                    <div class="source publicsanswhite">- Cassidy</div>
+                  </li>
+                </ul></div>
+            </div>
+          </div>
+          <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></div>
+      </section>
+                
       <section class="pt-24 pb-36 overflow-hidden bg"><div class="container px-4 mx-auto">
-        <h2 class="mb-6 text-6xl md:text-8xl xl:text-10xl text-white font-heading tracking-px-n leading-none publicsansfont text-center">Our Blog</h2>
-        <p class="mb-6 text-white tracking-px-n leading-none publicsansfont text-center font-medium">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit velit risus sit sed massa. Vivamus vel lorem egestas.</p>
+        <h2 class="text-6xl md:text-8xl xl:text-10xl text-white font-heading tracking-px-n leading-none publicsansfont text-center mb-10">Our Blog</h2>
+        
         <div class="flex flex-wrap -m-8">
           <div class="w-full md:w-1/3 p-8">
             <div class="p-4 h-full rounded-xl bgdarkpurple bg-opacity-70">
@@ -338,7 +361,7 @@
       </div>
                   
                   <a class="inline-block text-white hover:text-gray-200 hover:underline" href="#">
-                    <h3 class="text-xl font-bold font-heading leading-normal publicsanswhite">Space is Full of Surprises</h3>
+                    <h3 class="text-xl font-bold font-heading leading-normal publicsansgray">Space is Full of Surprises</h3>
                   </a>
                 </div>
                 <p class="text-sm text-gray-400 font-medium manrope">August 30, 2023</p>
@@ -354,7 +377,7 @@
       </div>
                   
                   <a class="inline-block text-white hover:text-gray-200 hover:underline" href="#">
-                    <h3 class="text-xl font-bold font-heading leading-normal publicsanswhite">Space is What Matters The Most</h3>
+                    <h3 class="text-xl font-bold font-heading leading-normal publicsansgray">Space is What Matters The Most</h3>
                   </a>
                 </div>
                 <p class="text-sm text-gray-400 font-medium manrope">August 30, 2023</p>
@@ -370,7 +393,7 @@
       </div>
                   
                   <a class="inline-block text-white hover:text-gray-200 hover:underline" href="#">
-                    <h3 class="text-xl font-bold font-heading leading-normal publicsanswhite">Let's Measure The Space</h3>
+                    <h3 class="text-xl font-bold font-heading leading-normal publicsanswhite publicsansgray">Let's Measure The Space</h3>
                   </a>
                 </div>
                 <p class="text-sm text-gray-400 font-medium manrope">August 30, 2023</p>

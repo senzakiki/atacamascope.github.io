@@ -2,6 +2,12 @@
 .publicsans.publicsansfont {
   font-family: "Public Sans",sans-serif
 }
+.publicsans,
+.publicsansfont,
+.publicsanspurple,
+.publicsanswhite {
+  font-family: Manrope,sans-serif
+}
 .left-90,
 .pos {
   position: relative
@@ -10,19 +16,10 @@
   color: #fff
 }
 .publicsans,
-.publicsansfont,
-.publicsanspurple,
-.publicsanswhite {
-  font-family: Manrope,sans-serif
-}
-.left-90 {
-  left: 90px
-}
-.publicsans {
+.publicsanspurple {
   color: #f1c40f
 }
 .publicsanspurple {
-  color: #7856ff;
   font-weight: 700
 }
 .publicsanswhite {
@@ -33,6 +30,9 @@
 .theuniverse {
   color: #fff;
   font-family: "Public Sans",sans-serif
+}
+.left-90 {
+  left: 90px
 }
 .publicsanswhitethin {
   font-weight: 100
@@ -65,7 +65,7 @@
   font-weight: 100
 }
 .bg {
-  background-color: #16161c
+  background-color: #010207
 }
 .atacamapurple,
 .bg-atacamapurple {
@@ -81,11 +81,13 @@
 .bgwhiteish {
   background-color: #f6f6f6
 }
-.bgdarkpurple {
-  background-color: #2d2e5f
-}
 .atacamayellowbg,
-.atacamayellowbg.buttonbg,
+.atacamayellowbg.buttonbg {
+  background-color: #f1c40f
+}
+.bgdarkpurple {
+  background-color: #fff
+}
 .bgdarkyellow {
   background-color: #f1c40f
 }
@@ -115,6 +117,18 @@
 .exo.publicpurple {
   font-family: Montserrat,sans-serif
 }
+.publicsans.publicsansgray,
+.publicsansblack,
+.publicsansgray {
+  font-family: Manrope,sans-serif
+}
+.publicsansblack {
+  color: #050505
+}
+.publicsansgray {
+  font-weight: 600;
+  color: #000
+}
 .atacamagraybg {
   background-color: #403f45
 }
@@ -122,5 +136,12 @@
   font-size: 20px;
   letter-spacing: 1px;
   text-transform: none
+}
+.bggray {
+  color: #161718;
+  background-color: #161718
+}
+.bgyellow {
+  background-color: #f1c40f
 }
 
